@@ -1,0 +1,999 @@
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+In file included from ../main.c:21:0:
+../drivers/frame.h:44:23: error: unknown type name 'tContext'
+In file included from ../main.c:22:0:
+../drivers/kentec320x240x16_ssd2119.h:46:1: error: unknown type name 'tDisplay'
+gmake: *** [main.o] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+In file included from ../main.c:22:0:
+../drivers/kentec320x240x16_ssd2119.c: In function 'Kentec320x240x16_SSD2119Init':
+../drivers/kentec320x240x16_ssd2119.c:867:5: warning: implicit declaration of function 'CYCLES_FTIME_US' [-Wimplicit-function-declaration]
+../drivers/kentec320x240x16_ssd2119.c:920:5: warning: implicit declaration of function 'CYCLES_FTIME_NS' [-Wimplicit-function-declaration]
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+./drivers/frame.o: In function `FrameDraw':
+H:\FestoTestingStation\assignment\Debug/../drivers/frame.c:1438: multiple definition of `FrameDraw'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/frame.c:1438: first defined here
+./drivers/kentec320x240x16_ssd2119.o:(.rodata.g_sKentec320x240x16_SSD2119+0x0): multiple definition of `g_sKentec320x240x16_SSD2119'
+./main.o:(.rodata.g_sKentec320x240x16_SSD2119+0x0): first defined here
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:860: multiple definition of `Kentec320x240x16_SSD2119Init'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:860: first defined here
+./drivers/pinout.o: In function `PinoutSet':
+H:\FestoTestingStation\assignment\Debug/../drivers/pinout.c:58: multiple definition of `PinoutSet'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/pinout.c:58: first defined here
+./drivers/sound.o: In function `SoundIntHandler':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:138: multiple definition of `SoundIntHandler'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:138: first defined here
+./drivers/sound.o: In function `SoundInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:332: multiple definition of `SoundInit'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:332: first defined here
+./drivers/sound.o: In function `SoundStart':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:406: multiple definition of `SoundStart'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:406: first defined here
+./drivers/sound.o: In function `SoundStop':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:502: multiple definition of `SoundStop'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:502: first defined here
+./drivers/sound.o: In function `SoundBusy':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:546: multiple definition of `SoundBusy'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:546: first defined here
+./drivers/sound.o: In function `SoundVolumeSet':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:569: multiple definition of `SoundVolumeSet'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:569: first defined here
+./drivers/sound.o: In function `SoundVolumeUp':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:592: multiple definition of `SoundVolumeUp'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:592: first defined here
+./drivers/sound.o: In function `SoundVolumeDown':
+H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:624: multiple definition of `SoundVolumeDown'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/sound.c:624: first defined here
+./drivers/touch.o:(.rodata.g_pi32TouchParameters+0x0): multiple definition of `g_pi32TouchParameters'
+./main.o:(.rodata.g_pi32TouchParameters+0x0): first defined here
+./drivers/touch.o:(.data.g_i16TouchMin+0x0): multiple definition of `g_i16TouchMin'
+./main.o:(.data.g_i16TouchMin+0x0): first defined here
+./drivers/touch.o: In function `TouchScreenIntHandler':
+H:\FestoTestingStation\assignment\Debug/../drivers/touch.c:462: multiple definition of `TouchScreenIntHandler'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/touch.c:462: first defined here
+./drivers/touch.o: In function `TouchScreenInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/touch.c:678: multiple definition of `TouchScreenInit'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/touch.c:678: first defined here
+./drivers/touch.o: In function `TouchScreenCallbackSet':
+H:\FestoTestingStation\assignment\Debug/../drivers/touch.c:750: multiple definition of `TouchScreenCallbackSet'
+./main.o:H:\FestoTestingStation\assignment\Debug/../drivers/touch.c:750: first defined here
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./main.o: In function `Kentec320x240x16_SSD2119Init':
+main.c:(.text.Kentec320x240x16_SSD2119Init+0xe): undefined reference to `CYCLES_FTIME_US'
+main.c:(.text.Kentec320x240x16_SSD2119Init+0xb8): undefined reference to `CYCLES_FTIME_NS'
+main.c:(.text.Kentec320x240x16_SSD2119Init+0xc8): undefined reference to `CYCLES_FTIME_NS'
+main.c:(.text.Kentec320x240x16_SSD2119Init+0xd8): undefined reference to `CYCLES_FTIME_NS'
+main.c:(.text.Kentec320x240x16_SSD2119Init+0xe8): undefined reference to `CYCLES_FTIME_NS'
+main.c:(.text.Kentec320x240x16_SSD2119Init+0xf8): undefined reference to `CYCLES_FTIME_NS'
+./main.o:main.c:(.text.Kentec320x240x16_SSD2119Init+0x108): more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+kentec320x240x16_ssd2119.c:(.text.Kentec320x240x16_SSD2119Init+0xe): undefined reference to `CYCLES_FTIME_US'
+kentec320x240x16_ssd2119.c:(.text.Kentec320x240x16_SSD2119Init+0xb8): undefined reference to `CYCLES_FTIME_NS'
+kentec320x240x16_ssd2119.c:(.text.Kentec320x240x16_SSD2119Init+0xc8): undefined reference to `CYCLES_FTIME_NS'
+kentec320x240x16_ssd2119.c:(.text.Kentec320x240x16_SSD2119Init+0xd8): undefined reference to `CYCLES_FTIME_NS'
+kentec320x240x16_ssd2119.c:(.text.Kentec320x240x16_SSD2119Init+0xe8): undefined reference to `CYCLES_FTIME_NS'
+kentec320x240x16_ssd2119.c:(.text.Kentec320x240x16_SSD2119Init+0xf8): undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:kentec320x240x16_ssd2119.c:(.text.Kentec320x240x16_SSD2119Init+0x108): more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+In file included from ../main.c:21:0:
+../drivers/frame.h:44:23: error: unknown type name 'tContext'
+In file included from ../main.c:22:0:
+../drivers/kentec320x240x16_ssd2119.h:46:1: error: unknown type name 'tDisplay'
+gmake: *** [main.o] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+In file included from ../main.c:21:0:
+../drivers/frame.h:44:23: error: unknown type name 'tContext'
+In file included from ../main.c:22:0:
+../drivers/kentec320x240x16_ssd2119.h:46:1: error: unknown type name 'tDisplay'
+gmake: *** [main.o] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+In file included from ../main.c:29:0:
+../drivers/frame.h:44:23: error: unknown type name 'tContext'
+In file included from ../main.c:30:0:
+../drivers/kentec320x240x16_ssd2119.h:46:1: error: unknown type name 'tDisplay'
+gmake: *** [main.o] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: assignment.out'
+'Invoking: GNU Linker'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"assignment.map" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -L"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -o"assignment.out" "./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds"  -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: error: C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o) uses VFP register arguments, assignment.out does not
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+./drivers/kentec320x240x16_ssd2119.o: In function `Kentec320x240x16_SSD2119Init':
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:867: undefined reference to `CYCLES_FTIME_US'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:920: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:921: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:922: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:923: undefined reference to `CYCLES_FTIME_NS'
+H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:924: undefined reference to `CYCLES_FTIME_NS'
+./drivers/kentec320x240x16_ssd2119.o:H:\FestoTestingStation\assignment\Debug/../drivers/kentec320x240x16_ssd2119.c:925: more undefined references to `CYCLES_FTIME_NS' follow
+./drivers/mx66l51235f.o: In function `MX66L51235FInit':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:83: undefined reference to `SPIFlashInit'
+./drivers/mx66l51235f.o: In function `MX66L51235FWriteEnable':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:108: undefined reference to `SPIFlashWriteEnable'
+./drivers/mx66l51235f.o: In function `MX66L51235FWait':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:146: undefined reference to `SPIFlashReadStatus'
+./drivers/mx66l51235f.o: In function `MX66L51235FSectorErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:256: undefined reference to `SPIFlashSectorErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase32':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:311: undefined reference to `SPIFlashBlockErase32'
+./drivers/mx66l51235f.o: In function `MX66L51235FBlockErase64':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:366: undefined reference to `SPIFlashBlockErase64'
+./drivers/mx66l51235f.o: In function `MX66L51235FChipErase':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:413: undefined reference to `SPIFlashChipErase'
+./drivers/mx66l51235f.o: In function `MX66L51235FPageProgram':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:471: undefined reference to `SPIFlashPageProgram'
+./drivers/mx66l51235f.o: In function `MX66L51235FRead':
+H:\FestoTestingStation\assignment\Debug/../drivers/mx66l51235f.c:521: undefined reference to `SPIFlashRead'
+collect2.exe: error: ld returned 1 exit status
+gmake: *** [assignment.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+In file included from ../main.c:21:0:
+../drivers/frame.h:44:23: error: unknown type name 'tContext'
+In file included from ../main.c:22:0:
+../drivers/kentec320x240x16_ssd2119.h:46:1: error: unknown type name 'tDisplay'
+gmake: *** [main.o] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project synth ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****

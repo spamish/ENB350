@@ -1,0 +1,15 @@
+
+**** Build of configuration Debug for project assignment ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: GNU Compiler'
+"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -DPART_TM4C129XNCZAD -I"c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/arm-none-eabi/include" -I"C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c" -I"H:/FestoTestingStation/assignment/drivers" -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"main.d" -MT"main.d" -o"main.o"  "../main.c"
+In file included from ../main.c:21:0:
+../drivers/frame.h:44:23: error: unknown type name 'tContext'
+In file included from ../main.c:22:0:
+../drivers/kentec320x240x16_ssd2119.h:46:1: error: unknown type name 'tDisplay'
+gmake: *** [main.o] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****

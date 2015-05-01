@@ -1,0 +1,1 @@
+"./main.o" "./tm4c129xnczad_startup_ccs_gcc.o" "./drivers/frame.o" "./drivers/kentec320x240x16_ssd2119.o" "./drivers/mx66l51235f.o" "./drivers/pinout.o" "./drivers/sound.o" "./drivers/touch.o" -Wl,-T"../tm4c129xnczad.lds" -Wl,--start-group -l"driver" -l"c" -l"gr" -l"gcc" -l"nosys" -Wl,--end-group 

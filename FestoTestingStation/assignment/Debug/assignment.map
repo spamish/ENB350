@@ -1,0 +1,1730 @@
+Archive member included because of file (symbol)
+
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                              ./drivers/touch.o (ADCIntEnable)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                              ./drivers/kentec320x240x16_ssd2119.o (GPIOPinWrite)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                              C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o) (IntRegister)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                              ./drivers/kentec320x240x16_ssd2119.o (LCDModeSet)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                              ./drivers/mx66l51235f.o (SSIDataPut)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                              ./drivers/kentec320x240x16_ssd2119.o (SysCtlPeripheralEnable)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                              ./drivers/sound.o (TimerEnable)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+                              C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o) (CPUcpsid)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o (__register_exitproc)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o (exit)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-fini.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o (__libc_fini_array)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o) (_global_impure_ptr)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-init.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o (__libc_init_array)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o (memset)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o) (__call_exitprocs)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-atexit.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o) (atexit)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+                              ./drivers/frame.o (GrContextClipRegionSet)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+                              ./drivers/frame.o (g_sFontCmss18b)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+                              ./drivers/frame.o (GrImageDraw)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                              ./drivers/frame.o (GrStringDraw)
+C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                              C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o) (GrMapISO8859_1_Unicode)
+c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a(_exit.o)
+                              c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+g_i16TouchX         0x2               ./drivers/touch.o
+g_i16TouchY         0x2               ./drivers/touch.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00100000         xr
+SRAM             0x20000000         0x00040000         xw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crti.o
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o
+LOAD ./main.o
+LOAD ./tm4c129xnczad_startup_ccs_gcc.o
+LOAD ./drivers/frame.o
+LOAD ./drivers/kentec320x240x16_ssd2119.o
+LOAD ./drivers/mx66l51235f.o
+LOAD ./drivers/pinout.o
+LOAD ./drivers/sound.o
+LOAD ./drivers/touch.o
+                0x00000000                PROVIDE (_intvecs_base_address, 0x0)
+
+.isr_vector     0x00000000      0x208
+ *(.isr_vector)
+ .isr_vector    0x00000000      0x208 ./tm4c129xnczad_startup_ccs_gcc.o
+                0x00000000                g_pfnVectors
+                0x20000000                PROVIDE (_vtable_base_address, 0x20000000)
+
+.vtable
+ *(.vtable)
+
+.text           0x00000208     0x5f8c
+ CREATE_OBJECT_SYMBOLS
+ *(.text)
+ .text          0x00000208        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crti.o
+ .text          0x00000208       0x94 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+ .text          0x0000029c      0x110 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o
+                0x0000029c                _start
+                0x0000029c                start
+                0x0000029c                _mainCRTStartup
+ .text          0x000003ac        0x0 ./main.o
+ .text          0x000003ac        0x0 ./tm4c129xnczad_startup_ccs_gcc.o
+ .text          0x000003ac        0x0 ./drivers/frame.o
+ .text          0x000003ac        0x0 ./drivers/kentec320x240x16_ssd2119.o
+ .text          0x000003ac        0x0 ./drivers/mx66l51235f.o
+ .text          0x000003ac        0x0 ./drivers/pinout.o
+ .text          0x000003ac        0x0 ./drivers/sound.o
+ .text          0x000003ac        0x0 ./drivers/touch.o
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-fini.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-init.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-atexit.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .text          0x000003ac        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a(_exit.o)
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtend.o
+ .text          0x000003ac        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtn.o
+ *(.text.*)
+ .text.main     0x000003ac       0x10 ./main.o
+                0x000003ac                main
+ .text.task1    0x000003bc        0xc ./main.o
+                0x000003bc                task1
+ .text.task2    0x000003c8        0xc ./main.o
+                0x000003c8                task2
+ .text.ResetISR
+                0x000003d4       0x84 ./tm4c129xnczad_startup_ccs_gcc.o
+                0x000003d4                ResetISR
+ .text.NmiSR    0x00000458        0x8 ./tm4c129xnczad_startup_ccs_gcc.o
+ .text.FaultISR
+                0x00000460        0x8 ./tm4c129xnczad_startup_ccs_gcc.o
+ .text.IntDefaultHandler
+                0x00000468        0x8 ./tm4c129xnczad_startup_ccs_gcc.o
+ .text.FrameDraw
+                0x00000470      0x334 ./drivers/frame.o
+                0x00000470                FrameDraw
+ .text.WriteData
+                0x000007a4       0x44 ./drivers/kentec320x240x16_ssd2119.o
+ .text.WriteCommand
+                0x000007e8       0x28 ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119PixelDraw
+                0x00000810       0x4c ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119PixelDrawMultiple
+                0x0000085c      0x21c ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119LineDrawH
+                0x00000a78       0x78 ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119LineDrawV
+                0x00000af0       0x78 ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119RectFill
+                0x00000b68      0x114 ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119ColorTranslate
+                0x00000c7c       0x38 ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119Flush
+                0x00000cb4       0x14 ./drivers/kentec320x240x16_ssd2119.o
+ .text.Kentec320x240x16_SSD2119Init
+                0x00000cc8      0x354 ./drivers/kentec320x240x16_ssd2119.o
+                0x00000cc8                Kentec320x240x16_SSD2119Init
+ .text.MX66L51235FInit
+                0x0000101c       0x50 ./drivers/mx66l51235f.o
+                0x0000101c                MX66L51235FInit
+ .text.MX66L51235FWriteEnable
+                0x0000106c       0x50 ./drivers/mx66l51235f.o
+ .text.MX66L51235FWait
+                0x000010bc       0x50 ./drivers/mx66l51235f.o
+ .text.MX66L51235FWriteEAR
+                0x0000110c       0xac ./drivers/mx66l51235f.o
+ .text.MX66L51235FSectorErase
+                0x000011b8       0x68 ./drivers/mx66l51235f.o
+                0x000011b8                MX66L51235FSectorErase
+ .text.MX66L51235FBlockErase32
+                0x00001220       0x68 ./drivers/mx66l51235f.o
+                0x00001220                MX66L51235FBlockErase32
+ .text.MX66L51235FBlockErase64
+                0x00001288       0x68 ./drivers/mx66l51235f.o
+                0x00001288                MX66L51235FBlockErase64
+ .text.MX66L51235FChipErase
+                0x000012f0       0x58 ./drivers/mx66l51235f.o
+                0x000012f0                MX66L51235FChipErase
+ .text.MX66L51235FPageProgram
+                0x00001348       0x70 ./drivers/mx66l51235f.o
+                0x00001348                MX66L51235FPageProgram
+ .text.MX66L51235FRead
+                0x000013b8       0x54 ./drivers/mx66l51235f.o
+                0x000013b8                MX66L51235FRead
+ .text.PinoutSet
+                0x0000140c      0x4f0 ./drivers/pinout.o
+                0x0000140c                PinoutSet
+ .text.SoundIntHandler
+                0x000018fc      0x3c0 ./drivers/sound.o
+                0x000018fc                SoundIntHandler
+ .text.SoundInit
+                0x00001cbc      0x10c ./drivers/sound.o
+                0x00001cbc                SoundInit
+ .text.SoundStart
+                0x00001dc8      0x1bc ./drivers/sound.o
+                0x00001dc8                SoundStart
+ .text.SoundStop
+                0x00001f84       0x98 ./drivers/sound.o
+                0x00001f84                SoundStop
+ .text.SoundBusy
+                0x0000201c       0x20 ./drivers/sound.o
+                0x0000201c                SoundBusy
+ .text.SoundVolumeSet
+                0x0000203c       0x20 ./drivers/sound.o
+                0x0000203c                SoundVolumeSet
+ .text.SoundVolumeUp
+                0x0000205c       0x3c ./drivers/sound.o
+                0x0000205c                SoundVolumeUp
+ .text.SoundVolumeDown
+                0x00002098       0x3c ./drivers/sound.o
+                0x00002098                SoundVolumeDown
+ .text.TouchScreenDebouncer
+                0x000020d4      0x444 ./drivers/touch.o
+ .text.TouchScreenIntHandler
+                0x00002518      0x2dc ./drivers/touch.o
+                0x00002518                TouchScreenIntHandler
+ .text.TouchScreenInit
+                0x000027f4      0x134 ./drivers/touch.o
+                0x000027f4                TouchScreenInit
+ .text.TouchScreenCallbackSet
+                0x00002928       0x20 ./drivers/touch.o
+                0x00002928                TouchScreenCallbackSet
+ .text._ADCIntNumberGet
+                0x00002948       0x48 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+ .text.ADCIntRegister
+                0x00002990       0x1a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002990                ADCIntRegister
+ .text.ADCIntUnregister
+                0x000029aa       0x16 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x000029aa                ADCIntUnregister
+ .text.ADCIntDisable
+                0x000029c0       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x000029c0                ADCIntDisable
+ .text.ADCIntEnable
+                0x000029d0       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x000029d0                ADCIntEnable
+ .text.ADCIntStatus
+                0x000029e0       0x34 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x000029e0                ADCIntStatus
+ .text.ADCIntClear
+                0x00002a14        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002a14                ADCIntClear
+ .text.ADCSequenceEnable
+                0x00002a1e        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002a1e                ADCSequenceEnable
+ .text.ADCSequenceDisable
+                0x00002a2c       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002a2c                ADCSequenceDisable
+ .text.ADCSequenceConfigure
+                0x00002a3c       0x48 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002a3c                ADCSequenceConfigure
+ .text.ADCSequenceStepConfigure
+                0x00002a84       0x84 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002a84                ADCSequenceStepConfigure
+ .text.ADCSequenceOverflow
+                0x00002b08        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b08                ADCSequenceOverflow
+ .text.ADCSequenceOverflowClear
+                0x00002b14        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b14                ADCSequenceOverflowClear
+ .text.ADCSequenceUnderflow
+                0x00002b1e        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b1e                ADCSequenceUnderflow
+ .text.ADCSequenceUnderflowClear
+                0x00002b2a        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b2a                ADCSequenceUnderflowClear
+ .text.ADCSequenceDataGet
+                0x00002b34       0x1e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b34                ADCSequenceDataGet
+ .text.ADCProcessorTrigger
+                0x00002b52       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b52                ADCProcessorTrigger
+ *fill*         0x00002b6a        0x2 00
+ .text.ADCSoftwareOversampleConfigure
+                0x00002b6c       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b6c                ADCSoftwareOversampleConfigure
+ .text.ADCSoftwareOversampleStepConfigure
+                0x00002b84       0x78 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002b84                ADCSoftwareOversampleStepConfigure
+ .text.ADCSoftwareOversampleDataGet
+                0x00002bfc       0x34 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002bfc                ADCSoftwareOversampleDataGet
+ .text.ADCHardwareOversampleConfigure
+                0x00002c30       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c30                ADCHardwareOversampleConfigure
+ .text.ADCComparatorConfigure
+                0x00002c40        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c40                ADCComparatorConfigure
+ .text.ADCComparatorRegionSet
+                0x00002c4a        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c4a                ADCComparatorRegionSet
+ .text.ADCComparatorReset
+                0x00002c58       0x1e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c58                ADCComparatorReset
+ .text.ADCComparatorIntDisable
+                0x00002c76       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c76                ADCComparatorIntDisable
+ .text.ADCComparatorIntEnable
+                0x00002c88       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c88                ADCComparatorIntEnable
+ .text.ADCComparatorIntStatus
+                0x00002c98        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c98                ADCComparatorIntStatus
+ .text.ADCComparatorIntClear
+                0x00002c9c        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002c9c                ADCComparatorIntClear
+ .text.ADCIntDisableEx
+                0x00002ca0        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002ca0                ADCIntDisableEx
+ .text.ADCIntEnableEx
+                0x00002caa        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002caa                ADCIntEnableEx
+ .text.ADCIntStatusEx
+                0x00002cb2       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002cb2                ADCIntStatusEx
+ .text.ADCIntClearEx
+                0x00002cc4        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002cc4                ADCIntClearEx
+ .text.ADCReferenceSet
+                0x00002ccc        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002ccc                ADCReferenceSet
+ .text.ADCReferenceGet
+                0x00002cd8        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002cd8                ADCReferenceGet
+ .text.ADCPhaseDelaySet
+                0x00002ce0        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002ce0                ADCPhaseDelaySet
+ .text.ADCPhaseDelayGet
+                0x00002ce4        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002ce4                ADCPhaseDelayGet
+ .text.ADCSequenceDMAEnable
+                0x00002ce8       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002ce8                ADCSequenceDMAEnable
+ .text.ADCSequenceDMADisable
+                0x00002cf8       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002cf8                ADCSequenceDMADisable
+ .text.ADCBusy  0x00002d0a        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002d0a                ADCBusy
+ .text.ADCClockConfigSet
+                0x00002d12       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002d12                ADCClockConfigSet
+ .text.ADCClockConfigGet
+                0x00002d2a       0x1a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+                0x00002d2a                ADCClockConfigGet
+ .text._GPIOIntNumberGet
+                0x00002d44       0x44 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .text.GPIODirModeSet
+                0x00002d88       0x2e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00002d88                GPIODirModeSet
+ .text.GPIODirModeGet
+                0x00002db6       0x24 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00002db6                GPIODirModeGet
+ .text.GPIOIntTypeSet
+                0x00002dda       0x5a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00002dda                GPIOIntTypeSet
+ .text.GPIOIntTypeGet
+                0x00002e34       0x4a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00002e34                GPIOIntTypeGet
+ .text.GPIOPadConfigSet
+                0x00002e7e      0x130 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00002e7e                GPIOPadConfigSet
+ .text.GPIOPadConfigGet
+                0x00002fae       0xc4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00002fae                GPIOPadConfigGet
+ .text.GPIOIntEnable
+                0x00003072        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003072                GPIOIntEnable
+ .text.GPIOIntDisable
+                0x0000307e        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000307e                GPIOIntDisable
+ .text.GPIOIntStatus
+                0x0000308c        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000308c                GPIOIntStatus
+ .text.GPIOIntClear
+                0x0000309a        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000309a                GPIOIntClear
+ .text.GPIOIntRegister
+                0x000030a0       0x1a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000030a0                GPIOIntRegister
+ .text.GPIOIntUnregister
+                0x000030ba       0x16 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000030ba                GPIOIntUnregister
+ .text.GPIOPinRead
+                0x000030d0        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000030d0                GPIOPinRead
+ .text.GPIOPinWrite
+                0x000030d6        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000030d6                GPIOPinWrite
+ .text.GPIOPinTypeADC
+                0x000030dc       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000030dc                GPIOPinTypeADC
+ .text.GPIOPinTypeCAN
+                0x000030f8       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000030f8                GPIOPinTypeCAN
+ .text.GPIOPinTypeComparator
+                0x00003114       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003114                GPIOPinTypeComparator
+ .text.GPIOPinTypeEPI
+                0x00003130       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003130                GPIOPinTypeEPI
+ .text.GPIOPinTypeEthernetLED
+                0x0000314c       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000314c                GPIOPinTypeEthernetLED
+ .text.GPIOPinTypeEthernetMII
+                0x00003168       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003168                GPIOPinTypeEthernetMII
+ .text.GPIOPinTypeGPIOInput
+                0x00003184       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003184                GPIOPinTypeGPIOInput
+ .text.GPIOPinTypeGPIOOutput
+                0x000031a0       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000031a0                GPIOPinTypeGPIOOutput
+ .text.GPIOPinTypeGPIOOutputOD
+                0x000031bc       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000031bc                GPIOPinTypeGPIOOutputOD
+ .text.GPIOPinTypeI2C
+                0x000031d8       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000031d8                GPIOPinTypeI2C
+ .text.GPIOPinTypeI2CSCL
+                0x000031f4       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000031f4                GPIOPinTypeI2CSCL
+ .text.GPIOPinTypeLCD
+                0x00003210       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003210                GPIOPinTypeLCD
+ .text.GPIOPinTypeLPC
+                0x0000322c       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000322c                GPIOPinTypeLPC
+ .text.GPIOPinTypePECIRx
+                0x00003248       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003248                GPIOPinTypePECIRx
+ .text.GPIOPinTypePECITx
+                0x00003264       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003264                GPIOPinTypePECITx
+ .text.GPIOPinTypePWM
+                0x00003280       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003280                GPIOPinTypePWM
+ .text.GPIOPinTypeQEI
+                0x0000329c       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000329c                GPIOPinTypeQEI
+ .text.GPIOPinTypeSSI
+                0x000032b8       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000032b8                GPIOPinTypeSSI
+ .text.GPIOPinTypeTimer
+                0x000032d4       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000032d4                GPIOPinTypeTimer
+ .text.GPIOPinTypeUART
+                0x000032f0       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000032f0                GPIOPinTypeUART
+ .text.GPIOPinTypeUSBAnalog
+                0x0000330c       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000330c                GPIOPinTypeUSBAnalog
+ .text.GPIOPinTypeUSBDigital
+                0x00003328       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003328                GPIOPinTypeUSBDigital
+ .text.GPIOPinTypeWakeHigh
+                0x00003344       0x1e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003344                GPIOPinTypeWakeHigh
+ .text.GPIOPinTypeWakeLow
+                0x00003362       0x1e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003362                GPIOPinTypeWakeLow
+ .text.GPIOPinTypeKBRow
+                0x00003380       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003380                GPIOPinTypeKBRow
+ .text.GPIOPinTypeKBColumn
+                0x0000339c       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000339c                GPIOPinTypeKBColumn
+ .text.GPIOPinTypeLEDSeq
+                0x000033b8       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000033b8                GPIOPinTypeLEDSeq
+ .text.GPIOPinTypeCIR
+                0x000033d4       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000033d4                GPIOPinTypeCIR
+ .text.GPIOPinWakeStatus
+                0x000033f0        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000033f0                GPIOPinWakeStatus
+ *fill*         0x000033f6        0x2 00
+ .text.GPIOPinConfigure
+                0x000033f8       0x4c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x000033f8                GPIOPinConfigure
+ .text.GPIODMATriggerEnable
+                0x00003444        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003444                GPIODMATriggerEnable
+ .text.GPIODMATriggerDisable
+                0x00003450        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x00003450                GPIODMATriggerDisable
+ .text.GPIOADCTriggerEnable
+                0x0000345e        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000345e                GPIOADCTriggerEnable
+ .text.GPIOADCTriggerDisable
+                0x0000346a        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+                0x0000346a                GPIOADCTriggerDisable
+ .text._IntDefaultHandler
+                0x00003478        0x2 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .text.IntMasterEnable
+                0x0000347a        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x0000347a                IntMasterEnable
+ .text.IntMasterDisable
+                0x00003488        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x00003488                IntMasterDisable
+ *fill*         0x00003496        0x2 00
+ .text.IntRegister
+                0x00003498       0x34 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x00003498                IntRegister
+ .text.IntUnregister
+                0x000034cc       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x000034cc                IntUnregister
+ .text.IntPriorityGroupingSet
+                0x000034e0       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x000034e0                IntPriorityGroupingSet
+ .text.IntPriorityGroupingGet
+                0x000034fc       0x24 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x000034fc                IntPriorityGroupingGet
+ .text.IntPrioritySet
+                0x00003520       0x2c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x00003520                IntPrioritySet
+ .text.IntPriorityGet
+                0x0000354c       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x0000354c                IntPriorityGet
+ .text.IntEnable
+                0x00003568       0x60 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x00003568                IntEnable
+ .text.IntDisable
+                0x000035c8       0x60 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x000035c8                IntDisable
+ .text.IntIsEnabled
+                0x00003628       0x64 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x00003628                IntIsEnabled
+ .text.IntPendSet
+                0x0000368c       0x50 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x0000368c                IntPendSet
+ .text.IntPendClear
+                0x000036dc       0x40 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x000036dc                IntPendClear
+ .text.IntPriorityMaskSet
+                0x0000371c        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x0000371c                IntPriorityMaskSet
+ .text.IntPriorityMaskGet
+                0x00003720        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x00003720                IntPriorityMaskGet
+ .text.IntTrigger
+                0x00003724        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x00003724                IntTrigger
+ .text.LCDModeSet
+                0x00003730       0x1e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003730                LCDModeSet
+ *fill*         0x0000374e        0x2 00
+ .text.LCDClockReset
+                0x00003750       0x20 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003750                LCDClockReset
+ .text.LCDIDDConfigSet
+                0x00003770        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003770                LCDIDDConfigSet
+ .text.LCDIDDTimingSet
+                0x00003774       0x34 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003774                LCDIDDTimingSet
+ .text.LCDIDDDMADisable
+                0x000037a8        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000037a8                LCDIDDDMADisable
+ .text.LCDIDDCommandWrite
+                0x000037b2        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000037b2                LCDIDDCommandWrite
+ .text.LCDIDDDataWrite
+                0x000037be        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000037be                LCDIDDDataWrite
+ .text.LCDIDDIndexedWrite
+                0x000037ca       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000037ca                LCDIDDIndexedWrite
+ .text.LCDIDDStatusRead
+                0x000037de        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000037de                LCDIDDStatusRead
+ .text.LCDIDDDataRead
+                0x000037ec        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000037ec                LCDIDDDataRead
+ .text.LCDIDDIndexedRead
+                0x000037fa       0x16 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000037fa                LCDIDDIndexedRead
+ .text.LCDIDDDMAWrite
+                0x00003810       0x2e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003810                LCDIDDDMAWrite
+ .text.LCDRasterConfigSet
+                0x0000383e        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x0000383e                LCDRasterConfigSet
+ .text.LCDRasterTimingSet
+                0x00003846       0x88 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003846                LCDRasterTimingSet
+ .text.LCDRasterACBiasIntCountSet
+                0x000038ce       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000038ce                LCDRasterACBiasIntCountSet
+ .text.LCDRasterEnable
+                0x000038e0       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000038e0                LCDRasterEnable
+ .text.LCDRasterEnabled
+                0x000038f4        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000038f4                LCDRasterEnabled
+ .text.LCDRasterDisable
+                0x000038fc        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000038fc                LCDRasterDisable
+ *fill*         0x00003906        0x2 00
+ .text.LCDRasterSubPanelConfigSet
+                0x00003908       0x30 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003908                LCDRasterSubPanelConfigSet
+ .text.LCDRasterSubPanelEnable
+                0x00003938        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003938                LCDRasterSubPanelEnable
+ .text.LCDRasterSubPanelDisable
+                0x00003942        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003942                LCDRasterSubPanelDisable
+ .text.LCDDMAConfigSet
+                0x0000394c        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x0000394c                LCDDMAConfigSet
+ .text.LCDRasterPaletteSet
+                0x00003950       0x58 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x00003950                LCDRasterPaletteSet
+ .text.LCDRasterFrameBufferSet
+                0x000039a8       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000039a8                LCDRasterFrameBufferSet
+ .text.LCDIntEnable
+                0x000039bc        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000039bc                LCDIntEnable
+ .text.LCDIntDisable
+                0x000039c0        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000039c0                LCDIntDisable
+ .text.LCDIntStatus
+                0x000039c4        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000039c4                LCDIntStatus
+ .text.LCDIntClear
+                0x000039ce        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000039ce                LCDIntClear
+ .text.LCDIntRegister
+                0x000039d2       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000039d2                LCDIntRegister
+ .text.LCDIntUnregister
+                0x000039e4       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+                0x000039e4                LCDIntUnregister
+ *fill*         0x000039f6        0x2 00
+ .text._SSIIntNumberGet
+                0x000039f8       0x44 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .text.SSIConfigSetExpClk
+                0x00003a3c       0x48 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003a3c                SSIConfigSetExpClk
+ .text.SSIEnable
+                0x00003a84        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003a84                SSIEnable
+ .text.SSIDisable
+                0x00003a8e        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003a8e                SSIDisable
+ .text.SSIIntRegister
+                0x00003a98       0x1a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003a98                SSIIntRegister
+ .text.SSIIntUnregister
+                0x00003ab2       0x16 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003ab2                SSIIntUnregister
+ .text.SSIIntEnable
+                0x00003ac8        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003ac8                SSIIntEnable
+ .text.SSIIntDisable
+                0x00003ad0        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003ad0                SSIIntDisable
+ .text.SSIIntStatus
+                0x00003ada        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003ada                SSIIntStatus
+ .text.SSIIntClear
+                0x00003ae4        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003ae4                SSIIntClear
+ .text.SSIDataPut
+                0x00003ae8        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003ae8                SSIDataPut
+ .text.SSIDataPutNonBlocking
+                0x00003af2       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003af2                SSIDataPutNonBlocking
+ .text.SSIDataGet
+                0x00003b04        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b04                SSIDataGet
+ .text.SSIDataGetNonBlocking
+                0x00003b10       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b10                SSIDataGetNonBlocking
+ .text.SSIDMAEnable
+                0x00003b24        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b24                SSIDMAEnable
+ .text.SSIDMADisable
+                0x00003b2c        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b2c                SSIDMADisable
+ .text.SSIBusy  0x00003b36        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b36                SSIBusy
+ .text.SSIClockSourceSet
+                0x00003b3e        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b3e                SSIClockSourceSet
+ .text.SSIClockSourceGet
+                0x00003b44        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b44                SSIClockSourceGet
+ .text.SSIAdvModeSet
+                0x00003b4a        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b4a                SSIAdvModeSet
+ .text.SSIAdvDataPutFrameEnd
+                0x00003b56       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b56                SSIAdvDataPutFrameEnd
+ .text.SSIAdvDataPutFrameEndNonBlocking
+                0x00003b68       0x1a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b68                SSIAdvDataPutFrameEndNonBlocking
+ .text.SSIAdvFrameHoldEnable
+                0x00003b82        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b82                SSIAdvFrameHoldEnable
+ .text.SSIAdvFrameHoldDisable
+                0x00003b8c        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+                0x00003b8c                SSIAdvFrameHoldDisable
+ *fill*         0x00003b96        0x2 00
+ .text._SysCtlMemTimingGet
+                0x00003b98       0x24 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .text.SysCtlSRAMSizeGet
+                0x00003bbc       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003bbc                SysCtlSRAMSizeGet
+ .text.SysCtlFlashSizeGet
+                0x00003bcc       0x3c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003bcc                SysCtlFlashSizeGet
+ .text.SysCtlFlashSectorSizeGet
+                0x00003c08       0x38 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003c08                SysCtlFlashSectorSizeGet
+ .text.SysCtlPeripheralPresent
+                0x00003c40       0x26 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003c40                SysCtlPeripheralPresent
+ .text.SysCtlPeripheralReady
+                0x00003c66       0x26 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003c66                SysCtlPeripheralReady
+ .text.SysCtlPeripheralPowerOn
+                0x00003c8c       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003c8c                SysCtlPeripheralPowerOn
+ .text.SysCtlPeripheralPowerOff
+                0x00003cae       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003cae                SysCtlPeripheralPowerOff
+ .text.SysCtlPeripheralReset
+                0x00003cd0       0x3a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003cd0                SysCtlPeripheralReset
+ .text.SysCtlPeripheralEnable
+                0x00003d0a       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003d0a                SysCtlPeripheralEnable
+ .text.SysCtlPeripheralDisable
+                0x00003d2c       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003d2c                SysCtlPeripheralDisable
+ .text.SysCtlPeripheralSleepEnable
+                0x00003d4e       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003d4e                SysCtlPeripheralSleepEnable
+ .text.SysCtlPeripheralSleepDisable
+                0x00003d70       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003d70                SysCtlPeripheralSleepDisable
+ .text.SysCtlPeripheralDeepSleepEnable
+                0x00003d92       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003d92                SysCtlPeripheralDeepSleepEnable
+ .text.SysCtlPeripheralDeepSleepDisable
+                0x00003db4       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003db4                SysCtlPeripheralDeepSleepDisable
+ *fill*         0x00003dd6        0x2 00
+ .text.SysCtlPeripheralClockGating
+                0x00003dd8       0x48 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003dd8                SysCtlPeripheralClockGating
+ .text.SysCtlIntRegister
+                0x00003e20       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e20                SysCtlIntRegister
+ .text.SysCtlIntUnregister
+                0x00003e34       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e34                SysCtlIntUnregister
+ *fill*         0x00003e46        0x2 00
+ .text.SysCtlIntEnable
+                0x00003e48       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e48                SysCtlIntEnable
+ .text.SysCtlIntDisable
+                0x00003e58       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e58                SysCtlIntDisable
+ .text.SysCtlIntClear
+                0x00003e68        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e68                SysCtlIntClear
+ .text.SysCtlIntStatus
+                0x00003e74       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e74                SysCtlIntStatus
+ .text.SysCtlLDOSleepSet
+                0x00003e88        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e88                SysCtlLDOSleepSet
+ .text.SysCtlLDOSleepGet
+                0x00003e94        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003e94                SysCtlLDOSleepGet
+ .text.SysCtlLDODeepSleepSet
+                0x00003ea0        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003ea0                SysCtlLDODeepSleepSet
+ .text.SysCtlLDODeepSleepGet
+                0x00003eac        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003eac                SysCtlLDODeepSleepGet
+ .text.SysCtlSleepPowerSet
+                0x00003eb8        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003eb8                SysCtlSleepPowerSet
+ .text.SysCtlDeepSleepPowerSet
+                0x00003ec4        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003ec4                SysCtlDeepSleepPowerSet
+ .text.SysCtlReset
+                0x00003ed0       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003ed0                SysCtlReset
+ .text.SysCtlSleep
+                0x00003ee0        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003ee0                SysCtlSleep
+ .text.SysCtlDeepSleep
+                0x00003ee4       0x20 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003ee4                SysCtlDeepSleep
+ .text.SysCtlResetCauseGet
+                0x00003f04        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f04                SysCtlResetCauseGet
+ .text.SysCtlResetCauseClear
+                0x00003f10       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f10                SysCtlResetCauseClear
+ .text.SysCtlDelay
+                0x00003f20        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f20                SysCtlDelay
+ .text.SysCtlMOSCConfigSet
+                0x00003f28        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f28                SysCtlMOSCConfigSet
+ .text.SysCtlPIOSCCalibrate
+                0x00003f34       0x48 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f34                SysCtlPIOSCCalibrate
+ .text.SysCtlResetBehaviorSet
+                0x00003f7c        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f7c                SysCtlResetBehaviorSet
+ .text.SysCtlResetBehaviorGet
+                0x00003f88        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f88                SysCtlResetBehaviorGet
+ .text.SysCtlClockFreqSet
+                0x00003f94      0x244 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00003f94                SysCtlClockFreqSet
+ .text.SysCtlClockSet
+                0x000041d8      0x11c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x000041d8                SysCtlClockSet
+ .text.SysCtlClockGet
+                0x000042f4      0x13c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x000042f4                SysCtlClockGet
+ .text.SysCtlDeepSleepClockSet
+                0x00004430        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00004430                SysCtlDeepSleepClockSet
+ .text.SysCtlDeepSleepClockConfigSet
+                0x0000443c       0x60 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x0000443c                SysCtlDeepSleepClockConfigSet
+ .text.SysCtlPWMClockSet
+                0x0000449c       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x0000449c                SysCtlPWMClockSet
+ .text.SysCtlPWMClockGet
+                0x000044b0       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x000044b0                SysCtlPWMClockGet
+ .text.SysCtlGPIOAHBEnable
+                0x000044c8       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x000044c8                SysCtlGPIOAHBEnable
+ .text.SysCtlGPIOAHBDisable
+                0x000044e0       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x000044e0                SysCtlGPIOAHBDisable
+ .text.SysCtlUSBPLLEnable
+                0x000044fc       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x000044fc                SysCtlUSBPLLEnable
+ .text.SysCtlUSBPLLDisable
+                0x0000450c       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x0000450c                SysCtlUSBPLLDisable
+ .text.SysCtlVoltageEventConfig
+                0x0000451c        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x0000451c                SysCtlVoltageEventConfig
+ .text.SysCtlVoltageEventStatus
+                0x00004528        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00004528                SysCtlVoltageEventStatus
+ .text.SysCtlVoltageEventClear
+                0x00004534       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00004534                SysCtlVoltageEventClear
+ .text.SysCtlNMIStatus
+                0x00004544        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00004544                SysCtlNMIStatus
+ .text.SysCtlNMIClear
+                0x00004550       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00004550                SysCtlNMIClear
+ .text.SysCtlClockOutConfig
+                0x00004560       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00004560                SysCtlClockOutConfig
+ .text.SysCtlAltClkConfig
+                0x00004570        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+                0x00004570                SysCtlAltClkConfig
+ .text._TimerIntNumberGet
+                0x0000457c       0x50 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .text.TimerEnable
+                0x000045cc       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000045cc                TimerEnable
+ .text.TimerDisable
+                0x000045dc       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000045dc                TimerDisable
+ .text.TimerConfigure
+                0x000045ec       0x58 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000045ec                TimerConfigure
+ .text.TimerControlLevel
+                0x00004644       0x1e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004644                TimerControlLevel
+ *fill*         0x00004662        0x2 00
+ .text.TimerControlTrigger
+                0x00004664       0x54 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004664                TimerControlTrigger
+ .text.TimerControlEvent
+                0x000046b8       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000046b8                TimerControlEvent
+ .text.TimerControlStall
+                0x000046cc       0x1e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000046cc                TimerControlStall
+ .text.TimerControlWaitOnTrigger
+                0x000046ea       0x2e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000046ea                TimerControlWaitOnTrigger
+ .text.TimerRTCEnable
+                0x00004718        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004718                TimerRTCEnable
+ .text.TimerRTCDisable
+                0x00004722        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004722                TimerRTCDisable
+ .text.TimerClockSourceSet
+                0x0000472c        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x0000472c                TimerClockSourceSet
+ .text.TimerClockSourceGet
+                0x00004732        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004732                TimerClockSourceGet
+ .text.TimerPrescaleSet
+                0x00004738       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004738                TimerPrescaleSet
+ .text.TimerPrescaleGet
+                0x0000474a        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x0000474a                TimerPrescaleGet
+ .text.TimerPrescaleMatchSet
+                0x00004754       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004754                TimerPrescaleMatchSet
+ .text.TimerPrescaleMatchGet
+                0x00004766        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004766                TimerPrescaleMatchGet
+ .text.TimerLoadSet
+                0x00004770       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004770                TimerLoadSet
+ .text.TimerLoadGet
+                0x00004782        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004782                TimerLoadGet
+ .text.TimerLoadSet64
+                0x0000478c        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x0000478c                TimerLoadSet64
+ .text.TimerLoadGet64
+                0x00004792       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004792                TimerLoadGet64
+ .text.TimerValueGet
+                0x000047aa        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000047aa                TimerValueGet
+ .text.TimerValueGet64
+                0x000047b4       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000047b4                TimerValueGet64
+ .text.TimerMatchSet
+                0x000047cc       0x12 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000047cc                TimerMatchSet
+ .text.TimerMatchGet
+                0x000047de        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000047de                TimerMatchGet
+ .text.TimerMatchSet64
+                0x000047e8        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000047e8                TimerMatchSet64
+ .text.TimerMatchGet64
+                0x000047ee       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x000047ee                TimerMatchGet64
+ .text.TimerIntRegister
+                0x00004806       0x1a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004806                TimerIntRegister
+ .text.TimerIntUnregister
+                0x00004820       0x16 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004820                TimerIntUnregister
+ .text.TimerIntEnable
+                0x00004836        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004836                TimerIntEnable
+ .text.TimerIntDisable
+                0x0000483e        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x0000483e                TimerIntDisable
+ .text.TimerIntStatus
+                0x00004848        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004848                TimerIntStatus
+ .text.TimerIntClear
+                0x00004852        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004852                TimerIntClear
+ .text.TimerSynchronize
+                0x00004856        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004856                TimerSynchronize
+ .text.TimerADCEventSet
+                0x0000485a        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x0000485a                TimerADCEventSet
+ .text.TimerADCEventGet
+                0x0000485e        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x0000485e                TimerADCEventGet
+ .text.TimerDMAEventSet
+                0x00004862        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004862                TimerDMAEventSet
+ .text.TimerDMAEventGet
+                0x00004866        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x00004866                TimerDMAEventGet
+ .text.TimerUpdateMode
+                0x0000486a       0x26 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+                0x0000486a                TimerUpdateMode
+ .text.CPUcpsid
+                0x00004890        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+                0x00004890                CPUcpsid
+ .text.CPUprimask
+                0x00004898        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+                0x00004898                CPUprimask
+ .text.CPUcpsie
+                0x0000489e        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+                0x0000489e                CPUcpsie
+ .text.CPUwfi   0x000048a6        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+                0x000048a6                CPUwfi
+ .text.CPUbasepriSet
+                0x000048aa        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+                0x000048aa                CPUbasepriSet
+ .text.CPUbasepriGet
+                0x000048b0        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+                0x000048b0                CPUbasepriGet
+ *fill*         0x000048b6        0x2 00
+ .text.__register_exitproc
+                0x000048b8       0xf4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o)
+                0x000048b8                __register_exitproc
+ .text.exit     0x000049ac       0x34 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o)
+                0x000049ac                exit
+ .text.__libc_fini_array
+                0x000049e0       0x44 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-fini.o)
+                0x000049e0                __libc_fini_array
+ .text.__libc_init_array
+                0x00004a24       0x88 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-init.o)
+                0x00004a24                __libc_init_array
+ .text.memset   0x00004aac       0xf8 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+                0x00004aac                memset
+ .text.startup.register_fini
+                0x00004ba4       0x24 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x00004bc8      0x17c c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+                0x00004bc8                __call_exitprocs
+ .text.atexit   0x00004d44       0x20 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-atexit.o)
+                0x00004d44                atexit
+ .text.GrLibInit
+                0x00004d64        0xc C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+                0x00004d64                GrLibInit
+ .text.GrContextInit
+                0x00004d70       0x6c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+                0x00004d70                GrContextInit
+ .text.GrContextClipRegionSet
+                0x00004ddc       0x62 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+                0x00004ddc                GrContextClipRegionSet
+ .text.PixelTransparentDraw
+                0x00004e3e      0x272 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .text.InternalImageDraw
+                0x000050b0      0x3a8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .text.GrTransparentImageDraw
+                0x00005458       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+                0x00005458                GrTransparentImageDraw
+ .text.GrImageDraw
+                0x00005468        0xe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+                0x00005468                GrImageDraw
+ .text.GrStringDraw
+                0x00005476       0x16 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005476                GrStringDraw
+ .text.GrStringNextCharGet
+                0x0000548c       0x28 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x0000548c                GrStringNextCharGet
+ .text.GrFontGlyphRender
+                0x000054b4      0x27c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x000054b4                GrFontGlyphRender
+ .text.GrFontInfoGet
+                0x00005730       0x38 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005730                GrFontInfoGet
+ .text.GrFontBaselineGet
+                0x00005768       0x2c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005768                GrFontBaselineGet
+ .text.GrFontHeightGet
+                0x00005794       0x2c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005794                GrFontHeightGet
+ .text.GrFontMaxWidthGet
+                0x000057c0       0x2c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x000057c0                GrFontMaxWidthGet
+ .text.GrFontGlyphDataGet
+                0x000057ec       0x90 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x000057ec                GrFontGlyphDataGet
+ .text.GrDefaultStringRenderer
+                0x0000587c       0xb8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x0000587c                GrDefaultStringRenderer
+ .text.GrStringWidthGet
+                0x00005934       0x6a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005934                GrStringWidthGet
+ .text.GrFontCodepageGet
+                0x0000599e       0x26 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x0000599e                GrFontCodepageGet
+ .text.UpdateContextCharMapping
+                0x000059c4       0x44 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .text.GrFontNumBlocksGet
+                0x00005a08       0x26 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005a08                GrFontNumBlocksGet
+ .text.GrFontBlockCodepointsGet
+                0x00005a2e       0x5c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005a2e                GrFontBlockCodepointsGet
+ .text.GrCodepageMapTableSet
+                0x00005a8a        0xa C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005a8a                GrCodepageMapTableSet
+ .text.GrStringCodepageSet
+                0x00005a94        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005a94                GrStringCodepageSet
+ .text.GrContextFontSet
+                0x00005a9a        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005a9a                GrContextFontSet
+ .text.GrStringTableSet
+                0x00005aa0       0x3c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005aa0                GrStringTableSet
+ .text.GrStringLanguageSet
+                0x00005adc       0x38 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005adc                GrStringLanguageSet
+ .text.GrStringGet
+                0x00005b14      0x258 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+                0x00005b14                GrStringGet
+ .text.GrMapUTF16_Unicode
+                0x00005d6c       0x84 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+ .text.GrMapISO8859_1_Unicode
+                0x00005df0        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005df0                GrMapISO8859_1_Unicode
+ .text.GrMapISO8859_2_Unicode
+                0x00005df8       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005df8                GrMapISO8859_2_Unicode
+ .text.GrMapISO8859_3_Unicode
+                0x00005e10       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005e10                GrMapISO8859_3_Unicode
+ .text.GrMapISO8859_4_Unicode
+                0x00005e28       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005e28                GrMapISO8859_4_Unicode
+ .text.GrMapISO8859_5_Unicode
+                0x00005e40       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005e40                GrMapISO8859_5_Unicode
+ .text.GrMapISO8859_6_Unicode
+                0x00005e50       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005e50                GrMapISO8859_6_Unicode
+ .text.GrMapISO8859_7_Unicode
+                0x00005e64       0x24 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005e64                GrMapISO8859_7_Unicode
+ .text.GrMapISO8859_8_Unicode
+                0x00005e88       0x26 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005e88                GrMapISO8859_8_Unicode
+ .text.GrMapISO8859_9_Unicode
+                0x00005eae       0x46 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005eae                GrMapISO8859_9_Unicode
+ .text.GrMapISO8859_10_Unicode
+                0x00005ef4       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005ef4                GrMapISO8859_10_Unicode
+ .text.GrMapISO8859_11_Unicode
+                0x00005f0c       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005f0c                GrMapISO8859_11_Unicode
+ .text.GrMapISO8859_13_Unicode
+                0x00005f1c       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005f1c                GrMapISO8859_13_Unicode
+ .text.GrMapISO8859_14_Unicode
+                0x00005f34       0x58 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005f34                GrMapISO8859_14_Unicode
+ .text.GrMapISO8859_15_Unicode
+                0x00005f8c       0x5a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005f8c                GrMapISO8859_15_Unicode
+ *fill*         0x00005fe6        0x2 00
+ .text.GrMapISO8859_16_Unicode
+                0x00005fe8       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00005fe8                GrMapISO8859_16_Unicode
+ .text.GrMapUTF8_Unicode
+                0x00006000       0x7c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00006000                GrMapUTF8_Unicode
+ .text.GrMapUTF16LE_Unicode
+                0x0000607c        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000607c                GrMapUTF16LE_Unicode
+ .text.GrMapUTF16BE_Unicode
+                0x00006082        0x6 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00006082                GrMapUTF16BE_Unicode
+ .text.GrMapUnicode_Unicode
+                0x00006088       0x22 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00006088                GrMapUnicode_Unicode
+ *fill*         0x000060aa        0x2 00
+ .text.GrMapWIN1250_Unicode
+                0x000060ac       0x18 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x000060ac                GrMapWIN1250_Unicode
+ .text.GrMapWIN1251_Unicode
+                0x000060c4       0x28 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x000060c4                GrMapWIN1251_Unicode
+ .text.GrMapWIN1252_Unicode
+                0x000060ec       0x1c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x000060ec                GrMapWIN1252_Unicode
+ .text.GrMapWIN1253_Unicode
+                0x00006108       0x28 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00006108                GrMapWIN1253_Unicode
+ .text.GrMapWIN1254_Unicode
+                0x00006130       0x24 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x00006130                GrMapWIN1254_Unicode
+ .text._exit    0x00006154        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a(_exit.o)
+                0x00006154                _exit
+                0x00006158                . = ALIGN (0x4)
+ *(.ctors)
+                0x00006158                . = ALIGN (0x4)
+ *(.dtors)
+                0x00006158                . = ALIGN (0x4)
+                0x00006158                __init_array_start = .
+ *(.init_array*)
+ .init_array    0x00006158        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+ .init_array.00000
+                0x0000615c        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+                0x00006160                __init_array_end = .
+ *(.init)
+ .init          0x00006160        0xc c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crti.o
+                0x00006160                _init
+ .init          0x0000616c        0xc c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtn.o
+ *(.fini*)
+ .fini          0x00006178        0xc c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crti.o
+                0x00006178                _fini
+ .fini_array    0x00006184        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+ .fini          0x00006188        0xc c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtn.o
+                0x00006194                PROVIDE (__etext, .)
+                0x00006194                PROVIDE (_etext, .)
+                0x00006194                PROVIDE (etext, .)
+
+.glue_7         0x00006194        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00006194        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00006194        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00006194        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00006194        0x0
+ .iplt          0x00000000        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+
+.rodata         0x00006194     0x46b8
+ *(.rodata)
+ *(.rodata*)
+ .rodata.g_pui8TopLeft
+                0x00006194      0x17c ./drivers/frame.o
+ .rodata.g_pui8Top
+                0x00006310     0x1a48 ./drivers/frame.o
+ .rodata.g_pui8TopRight
+                0x00007d58      0x174 ./drivers/frame.o
+ .rodata.g_pui8Left
+                0x00007ecc      0x548 ./drivers/frame.o
+ .rodata.g_pui8Right
+                0x00008414      0x548 ./drivers/frame.o
+ .rodata.g_pui8BottomLeft
+                0x0000895c       0xd0 ./drivers/frame.o
+ .rodata.g_pui8Bottom
+                0x00008a2c      0x788 ./drivers/frame.o
+ .rodata.g_pui8BottomRight
+                0x000091b4       0xc4 ./drivers/frame.o
+ .rodata.g_sKentec320x240x16_SSD2119
+                0x00009278       0x28 ./drivers/kentec320x240x16_ssd2119.o
+                0x00009278                g_sKentec320x240x16_SSD2119
+ .rodata.g_pi32TouchParameters
+                0x000092a0       0x1c ./drivers/touch.o
+                0x000092a0                g_pi32TouchParameters
+ .rodata.g_ppui32GPIOIntMapSnowflake
+                0x000092bc       0xc0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .rodata.g_pui32GPIOBaseAddrs
+                0x0000937c       0x90 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .rodata.g_ppui32GPIOIntMapBlizzard
+                0x0000940c       0xc0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .rodata.g_pui32Priority
+                0x000094cc       0x20 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .rodata.g_pui32Dii16Regs
+                0x000094ec       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .rodata.g_pui32PendRegs
+                0x00009500       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .rodata.g_pui32Regs
+                0x00009514       0x9c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .rodata.g_pui32EnRegs
+                0x000095b0       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .rodata.g_pui32UnpendRegs
+                0x000095c4       0x14 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .rodata.g_ppui32SSIIntMap
+                0x000095d8       0x20 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .rodata.g_ppui32SSIIntMapSnowflake
+                0x000095f8       0x20 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .rodata.g_pppui32XTALtoVCO
+                0x00009618      0x120 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .rodata.g_pui32VCOFrequencies
+                0x00009738        0x8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .rodata.g_sXTALtoMEMTIM
+                0x00009740       0x30 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .rodata.g_pui32Xtals
+                0x00009770       0x6c C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .rodata.g_ppui32TimerIntMapSnowflake
+                0x000097dc       0x40 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .rodata.g_ppui32TimerIntMap
+                0x0000981c       0x60 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .rodata.str1.4
+                0x0000987c        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00009880        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+                0x00009880                _global_impure_ptr
+ .rodata.g_psDefaultCodePointMapTable
+                0x00009884       0x10 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+                0x00009884                g_psDefaultCodePointMapTable
+ .rodata.g_pui8Cmss18bData
+                0x00009894      0x782 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+ *fill*         0x0000a016        0x2 00
+ .rodata.g_sFontCmss18b
+                0x0000a018       0xc8 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+                0x0000a018                g_sFontCmss18b
+ .rodata.g_pui16ISO8859_2_Unicode
+                0x0000a0e0       0xbe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a0e0                g_pui16ISO8859_2_Unicode
+ .rodata.g_pui16ISO8859_13_Unicode
+                0x0000a19e       0xbe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a19e                g_pui16ISO8859_13_Unicode
+ .rodata.g_pui16WIN1250_Unicode
+                0x0000a25c      0x100 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a25c                g_pui16WIN1250_Unicode
+ .rodata.g_pui16ISO8859_7_Unicode
+                0x0000a35c       0x3a C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a35c                g_pui16ISO8859_7_Unicode
+ .rodata.g_pui16WIN1253_Unicode
+                0x0000a396       0x80 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a396                g_pui16WIN1253_Unicode
+ .rodata.g_pui16WIN1252_Unicode
+                0x0000a416       0x40 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a416                g_pui16WIN1252_Unicode
+ .rodata.g_pui16ISO8859_3_Unicode
+                0x0000a456       0xbe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a456                g_pui16ISO8859_3_Unicode
+ .rodata.g_pui16ISO8859_16_Unicode
+                0x0000a514       0xbe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a514                g_pui16ISO8859_16_Unicode
+ .rodata.g_pui16WIN1251_Unicode
+                0x0000a5d2       0x80 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a5d2                g_pui16WIN1251_Unicode
+ .rodata.g_pui16ISO8859_14_Unicode
+                0x0000a652       0x3e C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a652                g_pui16ISO8859_14_Unicode
+ .rodata.g_pui16ISO8859_10_Unicode
+                0x0000a690       0xbe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a690                g_pui16ISO8859_10_Unicode
+ .rodata.g_pui16WIN1254_Unicode
+                0x0000a74e       0x40 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a74e                g_pui16WIN1254_Unicode
+ .rodata.g_pui16ISO8859_4_Unicode
+                0x0000a78e       0xbe C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+                0x0000a78e                g_pui16ISO8859_4_Unicode
+
+.eh_frame       0x0000a84c        0x4
+ .eh_frame      0x0000a84c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+ .eh_frame      0x0000a84c        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtend.o
+
+.data           0x20000000      0x434 load address 0x0000a850
+                0x0000a850                __data_load__ = LOADADDR (.data)
+                0x20000000                __data_start__ = .
+ *(.data)
+ .data          0x20000000        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crti.o
+ .data          0x20000000        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+                0x20000000                __dso_handle
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o
+ .data          0x20000004        0x0 ./main.o
+ .data          0x20000004        0x0 ./tm4c129xnczad_startup_ccs_gcc.o
+ .data          0x20000004        0x0 ./drivers/frame.o
+ .data          0x20000004        0x0 ./drivers/kentec320x240x16_ssd2119.o
+ .data          0x20000004        0x0 ./drivers/mx66l51235f.o
+ .data          0x20000004        0x0 ./drivers/pinout.o
+ .data          0x20000004        0x0 ./drivers/sound.o
+ .data          0x20000004        0x0 ./drivers/touch.o
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-fini.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-init.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-atexit.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .data          0x20000004        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a(_exit.o)
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtend.o
+ .data          0x20000004        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtn.o
+ *(.data*)
+ .data.g_i16TouchMin
+                0x20000004        0x2 ./drivers/touch.o
+                0x20000004                g_i16TouchMin
+ *fill*         0x20000006        0x2 00
+ .data.impure_data
+                0x20000008      0x428 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20000430        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+                0x20000430                _impure_ptr
+                0x20000434                . = ALIGN (0x4)
+                0x20000434                __data_end__ = .
+
+.jcr            0x20000434        0x4 load address 0x0000ac84
+ .jcr           0x20000434        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+ .jcr           0x20000434        0x4 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtend.o
+
+.igot.plt       0x20000438        0x0 load address 0x0000ac88
+ .igot.plt      0x00000000        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+
+vtable          0x20000800      0x400 load address 0x0000ac88
+                0x20000800                . = ALIGN (0x400)
+                0x20000800                PROVIDE (__start_vtable, ABSOLUTE (.))
+ vtable         0x20000800      0x400 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+                0x20000c00                PROVIDE (__stop_vtable, .)
+
+.ARM.exidx      0x0000b088        0x8
+                0x0000b088                __exidx_start = .
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0000b088        0x8 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o
+                0x0000b090                __exidx_end = .
+
+.ARM.extab      0x0000b090        0x0
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab     0x0000b090        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o
+
+.rel.dyn        0x0000b090        0x0
+ .rel.iplt      0x00000000        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+
+.bss            0x20000c00      0x2a0
+                0x20000c00                __bss_start__ = .
+ *(.shbss)
+ *(.bss)
+ .bss           0x20000c00        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crti.o
+ .bss           0x20000c00       0x1c c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o
+ .bss           0x20000c1c        0x0 ./main.o
+ .bss           0x20000c1c        0x0 ./tm4c129xnczad_startup_ccs_gcc.o
+ .bss           0x20000c1c        0x0 ./drivers/frame.o
+ .bss           0x20000c1c        0x0 ./drivers/kentec320x240x16_ssd2119.o
+ .bss           0x20000c1c        0x0 ./drivers/mx66l51235f.o
+ .bss           0x20000c1c        0x0 ./drivers/pinout.o
+ .bss           0x20000c1c        0x0 ./drivers/sound.o
+ .bss           0x20000c1c        0x0 ./drivers/touch.o
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-fini.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-init.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-atexit.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .bss           0x20000c1c        0x0 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a(_exit.o)
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtend.o
+ .bss           0x20000c1c        0x0 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtn.o
+ *(.bss.*)
+ .bss.pui32Stack
+                0x20000c1c      0x200 ./tm4c129xnczad_startup_ccs_gcc.o
+ .bss.g_ui32MX66L51235FAddr
+                0x20000e1c        0x4 ./drivers/mx66l51235f.o
+ .bss.g_sSoundState
+                0x20000e20       0x24 ./drivers/sound.o
+ .bss.g_ui32TSState
+                0x20000e44        0x4 ./drivers/touch.o
+ .bss.g_pfnTSHandler
+                0x20000e48        0x4 ./drivers/touch.o
+ .bss.g_ui8State
+                0x20000e4c        0x1 ./drivers/touch.o
+ *fill*         0x20000e4d        0x3 00
+ .bss.g_pi16Samples
+                0x20000e50       0x10 ./drivers/touch.o
+ .bss.g_i8Index
+                0x20000e60        0x1 ./drivers/touch.o
+ .bss.g_pui8OversampleFactor
+                0x20000e61        0x3 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+ .bss.g_psGrLibDefaults
+                0x20000e64        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+ .bss.g_pui8Dictionary
+                0x20000e68       0x20 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .bss.g_pui16LanguageTable
+                0x20000e88        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .bss.g_ui16NumLanguages
+                0x20000e8c        0x2 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .bss.g_ui16NumStrings
+                0x20000e8e        0x2 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .bss.g_pui8StringData
+                0x20000e90        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .bss.g_pui32StringTable
+                0x20000e94        0x4 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .bss.g_ui16Language
+                0x20000e98        0x2 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ *(COMMON)
+ COMMON         0x20000e9a        0x4 ./drivers/touch.o
+                0x20000e9a                g_i16TouchX
+                0x20000e9c                g_i16TouchY
+                0x20000ea0                . = ALIGN (0x4)
+ *fill*         0x20000e9e        0x2 00
+                0x20000ea0                __bss_end__ = .
+
+.heap           0x20000ea0        0x0
+                0x20000ea0                __heap_start__ = .
+                0x20000ea0                end = __heap_start__
+                0x20000ea0                _end = end
+                0x20000ea0                __end = end
+ *(.heap)
+                0x20000ea0                __heap_end__ = .
+                0x20000ea0                __HeapLimit = __heap_end__
+
+.stack          0x20000ea0        0x0
+                0x20000ea0                _stack = .
+                0x20000ea0                __stack = .
+ *(.stack)
+START GROUP
+LOAD C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a
+LOAD C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4\libgcc.a
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4\libgcc.a
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libg.a
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a
+END GROUP
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtend.o
+LOAD c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtn.o
+OUTPUT(assignment.out elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x37
+ .ARM.attributes
+                0x00000000       0x16 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crti.o
+ .ARM.attributes
+                0x00000016       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtbegin.o
+ .ARM.attributes
+                0x00000046       0x14 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/crt0.o
+ .ARM.attributes
+                0x0000005a       0x39 ./main.o
+ .ARM.attributes
+                0x00000093       0x39 ./tm4c129xnczad_startup_ccs_gcc.o
+ .ARM.attributes
+                0x000000cc       0x39 ./drivers/frame.o
+ .ARM.attributes
+                0x00000105       0x39 ./drivers/kentec320x240x16_ssd2119.o
+ .ARM.attributes
+                0x0000013e       0x39 ./drivers/mx66l51235f.o
+ .ARM.attributes
+                0x00000177       0x39 ./drivers/pinout.o
+ .ARM.attributes
+                0x000001b0       0x39 ./drivers/sound.o
+ .ARM.attributes
+                0x000001e9       0x39 ./drivers/touch.o
+ .ARM.attributes
+                0x00000222       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+ .ARM.attributes
+                0x0000025d       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .ARM.attributes
+                0x00000298       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .ARM.attributes
+                0x000002d3       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+ .ARM.attributes
+                0x0000030e       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .ARM.attributes
+                0x00000349       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .ARM.attributes
+                0x00000384       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .ARM.attributes
+                0x000003bf       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+ .ARM.attributes
+                0x000003fa       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x0000042a       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000045a       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x0000048a       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000004ba       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000004ea       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000051a       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000054a       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x0000057a       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+ .ARM.attributes
+                0x000005b5       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+ .ARM.attributes
+                0x000005f0       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .ARM.attributes
+                0x0000062b       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .ARM.attributes
+                0x00000666       0x3b C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+ .ARM.attributes
+                0x000006a1       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x000006d1       0x30 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtend.o
+ .ARM.attributes
+                0x00000701       0x18 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/crtn.o
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./tm4c129xnczad_startup_ccs_gcc.o
+ .comment       0x00000000       0x71 ./drivers/frame.o
+ .comment       0x00000000       0x71 ./drivers/kentec320x240x16_ssd2119.o
+ .comment       0x00000000       0x71 ./drivers/mx66l51235f.o
+ .comment       0x00000000       0x71 ./drivers/pinout.o
+ .comment       0x00000000       0x71 ./drivers/sound.o
+ .comment       0x00000000       0x71 ./drivers/touch.o
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(adc.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(gpio.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(interrupt.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(lcd.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(ssi.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(sysctl.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(timer.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc\libdriver.a(cpu.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(context.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(fontcmss18b.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(image.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(string.o)
+ .comment       0x00000000       0x71 C:/ti/tirtos_tivac_2_10_01_38/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc\libgr.a(charmap.o)
+
+.debug_info     0x00000000     0x1723
+ .debug_info    0x00000000       0xba ./main.o
+ .debug_info    0x000000ba      0x168 ./tm4c129xnczad_startup_ccs_gcc.o
+ .debug_info    0x00000222      0x6b5 ./drivers/frame.o
+ .debug_info    0x000008d7      0x65e ./drivers/kentec320x240x16_ssd2119.o
+ .debug_info    0x00000f35      0x25d ./drivers/mx66l51235f.o
+ .debug_info    0x00001192       0x84 ./drivers/pinout.o
+ .debug_info    0x00001216      0x2c9 ./drivers/sound.o
+ .debug_info    0x000014df      0x244 ./drivers/touch.o
+
+.debug_abbrev   0x00000000      0x689
+ .debug_abbrev  0x00000000       0x50 ./main.o
+ .debug_abbrev  0x00000050       0xb7 ./tm4c129xnczad_startup_ccs_gcc.o
+ .debug_abbrev  0x00000107      0x14c ./drivers/frame.o
+ .debug_abbrev  0x00000253      0x11c ./drivers/kentec320x240x16_ssd2119.o
+ .debug_abbrev  0x0000036f       0xdb ./drivers/mx66l51235f.o
+ .debug_abbrev  0x0000044a       0x48 ./drivers/pinout.o
+ .debug_abbrev  0x00000492      0x119 ./drivers/sound.o
+ .debug_abbrev  0x000005ab       0xde ./drivers/touch.o
+
+.debug_loc      0x00000000      0x869
+ .debug_loc     0x00000000       0x84 ./main.o
+ .debug_loc     0x00000084       0xbc ./tm4c129xnczad_startup_ccs_gcc.o
+ .debug_loc     0x00000140       0x39 ./drivers/frame.o
+ .debug_loc     0x00000179      0x230 ./drivers/kentec320x240x16_ssd2119.o
+ .debug_loc     0x000003a9      0x218 ./drivers/mx66l51235f.o
+ .debug_loc     0x000005c1       0x2c ./drivers/pinout.o
+ .debug_loc     0x000005ed      0x1a8 ./drivers/sound.o
+ .debug_loc     0x00000795       0xd4 ./drivers/touch.o
+
+.debug_aranges  0x00000000      0x208
+ .debug_aranges
+                0x00000000       0x30 ./main.o
+ .debug_aranges
+                0x00000030       0x38 ./tm4c129xnczad_startup_ccs_gcc.o
+ .debug_aranges
+                0x00000068       0x20 ./drivers/frame.o
+ .debug_aranges
+                0x00000088       0x68 ./drivers/kentec320x240x16_ssd2119.o
+ .debug_aranges
+                0x000000f0       0x68 ./drivers/mx66l51235f.o
+ .debug_aranges
+                0x00000158       0x20 ./drivers/pinout.o
+ .debug_aranges
+                0x00000178       0x58 ./drivers/sound.o
+ .debug_aranges
+                0x000001d0       0x38 ./drivers/touch.o
+
+.debug_line     0x00000000      0xc12
+ .debug_line    0x00000000       0x5b ./main.o
+ .debug_line    0x0000005b      0x119 ./tm4c129xnczad_startup_ccs_gcc.o
+ .debug_line    0x00000174      0x155 ./drivers/frame.o
+ .debug_line    0x000002c9      0x2fd ./drivers/kentec320x240x16_ssd2119.o
+ .debug_line    0x000005c6      0x1c8 ./drivers/mx66l51235f.o
+ .debug_line    0x0000078e      0x128 ./drivers/pinout.o
+ .debug_line    0x000008b6      0x1c2 ./drivers/sound.o
+ .debug_line    0x00000a78      0x19a ./drivers/touch.o
+
+.debug_str      0x00000000      0x9d9
+ .debug_str     0x00000000       0xeb ./main.o
+                                0x124 (size before relaxing)
+ .debug_str     0x000000eb       0xa5 ./tm4c129xnczad_startup_ccs_gcc.o
+                                0x1a3 (size before relaxing)
+ .debug_str     0x00000190      0x2af ./drivers/frame.o
+                                0x3e0 (size before relaxing)
+ .debug_str     0x0000043f      0x279 ./drivers/kentec320x240x16_ssd2119.o
+                                0x488 (size before relaxing)
+ .debug_str     0x000006b8      0x11d ./drivers/mx66l51235f.o
+                                0x249 (size before relaxing)
+ .debug_str     0x000007d5       0x1e ./drivers/pinout.o
+                                0x11c (size before relaxing)
+ .debug_str     0x000007f3       0xfd ./drivers/sound.o
+                                0x233 (size before relaxing)
+ .debug_str     0x000008f0       0xe9 ./drivers/touch.o
+                                0x23d (size before relaxing)
+
+.debug_frame    0x00000000      0x6b0
+ .debug_frame   0x00000000       0x58 ./main.o
+ .debug_frame   0x00000058       0x78 ./tm4c129xnczad_startup_ccs_gcc.o
+ .debug_frame   0x000000d0       0x30 ./drivers/frame.o
+ .debug_frame   0x00000100      0x148 ./drivers/kentec320x240x16_ssd2119.o
+ .debug_frame   0x00000248      0x148 ./drivers/mx66l51235f.o
+ .debug_frame   0x00000390       0x2c ./drivers/pinout.o
+ .debug_frame   0x000003bc       0xf8 ./drivers/sound.o
+ .debug_frame   0x000004b4       0x88 ./drivers/touch.o
+ .debug_frame   0x0000053c       0x34 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000570       0x28 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_frame   0x00000598       0x2c c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-fini.o)
+ .debug_frame   0x000005c4       0x2c c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-init.o)
+ .debug_frame   0x000005f0       0x28 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_frame   0x00000618       0x50 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000668       0x28 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00000690       0x20 c:/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib\libnosys.a(_exit.o)
