@@ -143,6 +143,10 @@ void DK_TM4C129X_initGeneral(void)
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOR);
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOS);
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOT);
+
+	/* FestoStation block start */
+	// adc init
+	/* FestoStation block end */
 }
 
 /*
@@ -254,6 +258,26 @@ const GPIO_HWAttrs gpioHWAttrs[DK_TM4C129X_GPIOCOUNT] = {
     {GPIO_PORTP_BASE, GPIO_PIN_1, GPIO_INPUT},  /* DK_TM4C129X_BUTTON_SELECT */
     {GPIO_PORTN_BASE, GPIO_PIN_3, GPIO_INPUT},  /* DK_TM4C129X_BUTTON_UP */
     {GPIO_PORTE_BASE, GPIO_PIN_5, GPIO_INPUT},  /* DK_TM4C129X_BUTTON_DOWN */
+
+	/* FestoStation block start */
+	{GPIO_PORTL_BASE, GPIO_PIN_1, GPIO_OUTPUT},	//OUT 0 L1
+	{GPIO_PORTL_BASE, GPIO_PIN_0, GPIO_OUTPUT},	//OUT 1 L0
+	{GPIO_PORTL_BASE, GPIO_PIN_2, GPIO_OUTPUT},	//OUT 2 L2
+	{GPIO_PORTL_BASE, GPIO_PIN_3, GPIO_OUTPUT},	//OUT 3 L3
+	{GPIO_PORTL_BASE, GPIO_PIN_4, GPIO_OUTPUT},	//OUT 4 L4
+	{GPIO_PORTL_BASE, GPIO_PIN_5, GPIO_OUTPUT},	//OUT 5 L5
+	{GPIO_PORTP_BASE, GPIO_PIN_5, GPIO_OUTPUT},	//OUT 6 P5
+	{GPIO_PORTP_BASE, GPIO_PIN_4, GPIO_OUTPUT},	//OUT 7 P4
+
+	{GPIO_PORTM_BASE, GPIO_PIN_3, GPIO_INPUT},	//IN  0 M3
+	{GPIO_PORTM_BASE, GPIO_PIN_2, GPIO_INPUT},	//IN  1 M2
+	{GPIO_PORTM_BASE, GPIO_PIN_1, GPIO_INPUT},	//IN  2 M1
+	{GPIO_PORTM_BASE, GPIO_PIN_0, GPIO_INPUT},	//IN  3 M0
+	{GPIO_PORTN_BASE, GPIO_PIN_4, GPIO_INPUT},	//IN  4 N4
+	{GPIO_PORTA_BASE, GPIO_PIN_7, GPIO_INPUT},	//IN  5 A7
+	{GPIO_PORTC_BASE, GPIO_PIN_6, GPIO_INPUT},	//IN  6 C6
+	{GPIO_PORTC_BASE, GPIO_PIN_5, GPIO_INPUT},	//IN  7 C5
+	/* FestoStation block end */
 };
 
 /* Memory for the GPIO module to construct a Hwi */
@@ -288,6 +312,26 @@ const GPIO_Config GPIO_config[] = {
     {&gpioHWAttrs[3]},
     {&gpioHWAttrs[4]},
     {&gpioHWAttrs[5]},
+
+	/* FestoStation block start */
+	{&gpioHWAttrs[6]},
+	{&gpioHWAttrs[7]},
+	{&gpioHWAttrs[8]},
+	{&gpioHWAttrs[9]},
+	{&gpioHWAttrs[10]},
+	{&gpioHWAttrs[11]},
+	{&gpioHWAttrs[12]},
+	{&gpioHWAttrs[13]},
+	{&gpioHWAttrs[14]},
+	{&gpioHWAttrs[15]},
+	{&gpioHWAttrs[16]},
+	{&gpioHWAttrs[17]},
+	{&gpioHWAttrs[18]},
+	{&gpioHWAttrs[19]},
+	{&gpioHWAttrs[20]},
+	{&gpioHWAttrs[21]},
+	/* FestoStation block end */
+
     {NULL}
 };
 
@@ -301,6 +345,26 @@ void DK_TM4C129X_initGPIO(void)
     GPIOPinTypeGPIOOutput(GPIO_PORTQ_BASE, GPIO_PIN_7); /* DK_TM4C129X_USER1 */
     GPIOPinTypeGPIOOutput(GPIO_PORTQ_BASE, GPIO_PIN_4); /* DK_TM4C129X_USER1 */
 
+	/* FestoStation block start */
+	GPIOPinTypeGPIOOutput(GPIO_PORTL_BASE, GPIO_PIN_1);	//OUT 0 L1
+	GPIOPinTypeGPIOOutput(GPIO_PORTL_BASE, GPIO_PIN_0);	//OUT 1 L0
+	GPIOPinTypeGPIOOutput(GPIO_PORTL_BASE, GPIO_PIN_2);	//OUT 2 L2
+	GPIOPinTypeGPIOOutput(GPIO_PORTL_BASE, GPIO_PIN_3);	//OUT 3 L3
+	GPIOPinTypeGPIOOutput(GPIO_PORTL_BASE, GPIO_PIN_4);	//OUT 4 L4
+	GPIOPinTypeGPIOOutput(GPIO_PORTL_BASE, GPIO_PIN_5);	//OUT 5 L5
+	GPIOPinTypeGPIOOutput(GPIO_PORTP_BASE, GPIO_PIN_5);	//OUT 6 P5
+	GPIOPinTypeGPIOOutput(GPIO_PORTP_BASE, GPIO_PIN_4);	//OUT 7 P4
+
+	GPIOPinTypeGPIOInput(GPIO_PORTM_BASE, GPIO_PIN_3);	//IN  0 M3
+	GPIOPinTypeGPIOInput(GPIO_PORTM_BASE, GPIO_PIN_2);	//IN  1 M2
+	GPIOPinTypeGPIOInput(GPIO_PORTM_BASE, GPIO_PIN_1);	//IN  2 M1
+	GPIOPinTypeGPIOInput(GPIO_PORTM_BASE, GPIO_PIN_0);	//IN  3 M0
+	GPIOPinTypeGPIOInput(GPIO_PORTN_BASE, GPIO_PIN_4);	//IN  4 N4
+	GPIOPinTypeGPIOInput(GPIO_PORTA_BASE, GPIO_PIN_7);	//IN  5 A7
+	GPIOPinTypeGPIOInput(GPIO_PORTC_BASE, GPIO_PIN_6);	//IN  6 C6
+	GPIOPinTypeGPIOInput(GPIO_PORTC_BASE, GPIO_PIN_5);	//IN  7 C5
+	/* FestoStation block end */
+
     /* Setup the button GPIO pins used */
     GPIOPinTypeGPIOInput(GPIO_PORTP_BASE, GPIO_PIN_1);
     GPIOPadConfigSet(GPIO_PORTP_BASE, GPIO_PIN_1, GPIO_STRENGTH_4MA, GPIO_PIN_TYPE_STD_WPU);
@@ -308,6 +372,8 @@ void DK_TM4C129X_initGPIO(void)
     GPIOPadConfigSet(GPIO_PORTN_BASE, GPIO_PIN_3, GPIO_STRENGTH_4MA, GPIO_PIN_TYPE_STD_WPU);
     GPIOPinTypeGPIOInput(GPIO_PORTE_BASE, GPIO_PIN_5);
     GPIOPadConfigSet(GPIO_PORTE_BASE, GPIO_PIN_5, GPIO_STRENGTH_4MA, GPIO_PIN_TYPE_STD_WPU);
+
+
 
     /* Once GPIO_init is called, GPIO_config cannot be changed */
     GPIO_init();

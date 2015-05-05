@@ -61,6 +61,27 @@ extern "C" {
 #define Board_BUTTON1               DK_TM4C129X_BUTTON_UP
 #define Board_BUTTON2               DK_TM4C129X_BUTTON_DOWN
 
+/* FestoStation block start */
+#define Board_ACTUATOR_RISER_DOWN	DK_TM4C129X_PORTL_1		//OUT 0 L1
+#define Board_ACTUATOR_RISER_UP		DK_TM4C129X_PORTL_0		//OUT 1 L0
+#define Board_ACTUATOR_EJECTOR		DK_TM4C129X_PORTL_2		//OUT 2 L2
+#define Board_ACTUATOR_MEASURE_DOWN	DK_TM4C129X_PORTL_3		//OUT 3 L3
+#define Board_DO_4					DK_TM4C129X_PORTL_4		//OUT 4 L4
+#define Board_DO_5					DK_TM4C129X_PORTL_5		//OUT 5 L5
+#define Board_DO_6					DK_TM4C129X_PORTP_5		//OUT 6 P5
+#define Board_DO_7					DK_TM4C129X_PORTP_4		//OUT 7 P4
+
+#define Board_SENSE_SAMPLE_METALLIC	DK_TM4C129X_PORTM_3		//IN  0 M3
+#define Board_SENSE_SAMPLE_IN_PLACE	DK_TM4C129X_PORTM_2		//IN  1 M2
+#define Board_SENSE_SAMPLE_COLOUR	DK_TM4C129X_PORTM_1		//IN  2 M1
+#define Board_SENSE_RISER_DOWN		DK_TM4C129X_PORTM_0		//IN  3 M0
+#define Board_SENSE_RISER_UP		DK_TM4C129X_PORTN_4		//IN  4 N4
+#define Board_SENSE_EJECTOR_READY	DK_TM4C129X_PORTA_7		//IN  5 A7
+#define Board_SENSE_MEASURE_DOWN	DK_TM4C129X_PORTC_6		//IN  6 C6
+#define Board_DI_7					DK_TM4C129X_PORTC_5		//IN  7 C5
+// #define Board_ANALOG_HEIGHT		DK_TM4129X_PORTX_X		//ADC 0 XX
+/* FestoStation block end */
+
 #define Board_I2C0                  DK_TM4C129X_I2C3
 #define Board_I2C_TMP               DK_TM4C129X_I2C3
 #define Board_I2C_NFC               DK_TM4C129X_I2C3
