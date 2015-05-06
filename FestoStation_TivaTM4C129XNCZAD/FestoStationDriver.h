@@ -28,6 +28,9 @@ h. Return a height measurement
 
 */
 
+#ifndef FESTOSTATIONDRIVER_H
+#define FESTOSTATIONDRIVER_H
+
 #define FESTO_DISABLED 0
 #define FESTO_ENABLED 1
 
@@ -155,3 +158,5 @@ uint8_t Control_Driver(FestoStationDriver* Driver, uint8_t option)
 	}
 	return 0;
 }
+
+#endif
