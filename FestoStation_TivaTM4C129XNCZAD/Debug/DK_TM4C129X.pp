@@ -144,6 +144,7 @@ DK_TM4C129X.obj: C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages
 DK_TM4C129X.obj: C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/Task__epilogue.h
 DK_TM4C129X.obj: C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/package/Task_SupportProxy.h
 DK_TM4C129X.obj: C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/Task.h
+DK_TM4C129X.obj: C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/Task.h
 DK_TM4C129X.obj: c:/ti/xdctools_3_30_03_47_core/packages/xdc/runtime/Error.h
 DK_TM4C129X.obj: c:/ti/xdctools_3_30_03_47_core/packages/xdc/runtime/System.h
 DK_TM4C129X.obj: c:/ti/xdctools_3_30_03_47_core/packages/xdc/runtime/Types.h
@@ -445,6 +446,7 @@ c:/ti/xdctools_3_30_03_47_core/packages/xdc/runtime/Types.h:
 C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/interfaces/ITaskSupport.h: 
 C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/Task__epilogue.h: 
 C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/package/Task_SupportProxy.h: 
+C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/Task.h: 
 C:/ti/tirtos_tivac_2_10_01_38/products/bios_6_41_00_26/packages/ti/sysbios/knl/Task.h: 
 c:/ti/xdctools_3_30_03_47_core/packages/xdc/runtime/Error.h: 
 c:/ti/xdctools_3_30_03_47_core/packages/xdc/runtime/System.h: 

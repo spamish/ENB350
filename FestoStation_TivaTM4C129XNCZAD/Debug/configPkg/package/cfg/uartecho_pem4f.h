@@ -13,6 +13,9 @@ extern const ti_sysbios_knl_Task_Handle echo;
 #include <ti/sysbios/knl/Task.h>
 extern const ti_sysbios_knl_Task_Handle LCD;
 
+#include <ti/sysbios/knl/Task.h>
+extern const ti_sysbios_knl_Task_Handle FESTO;
+
 #define TI_DRIVERS_WIFI_INCLUDED 0
 
 extern int xdc_runtime_Startup__EXECFXN__C;

@@ -27,10 +27,13 @@ h. Return a height measurement
 19 2B4 I-6 Ejecting Cylinder is: Extended
 
 */
-
 #ifndef FESTOSTATIONDRIVER_H
 #define FESTOSTATIONDRIVER_H
 
+// include Board Header
+#include "Board.h"
+
+// define constants to control the driver
 #define FESTO_DISABLED 0
 #define FESTO_ENABLED 1
 
@@ -40,23 +43,36 @@ h. Return a height measurement
 #define FESTO_EJECTOR_EXTEND 0
 #define FESTO_EJECTOR_RETRACT 1
 
-#define FESTO_PIECE_METALLIC 0
-#define FESTO_PIECE_OTHER 1
+// sensor pin
+#define FESTO_PIECE_METALLIC 1
+#define FESTO_PIECE_OTHER 0
 
-#define FESTO_COLOR_ORANGE 0
-#define FESTO_COLOR_OTHER 1
+// sensor pin
+#define FESTO_COLOR_ORANGE 1
+#define FESTO_COLOR_OTHER 0
+
+// sensor pin
+#define FESTO_PIECE_PLACED 1
+#define FESTO_PIECE_MISSING 0
+
+#define FESTO_MEASURE_DOWN 0
+#define FESTO_MEASURE_UP 1
+
+extern uint32_t GPIO_read(unsigned int index);
+extern void 	GPIO_toggle(unsigned int index);
+extern void 	GPIO_write(unsigned int index, uint32_t value);
 
 typedef struct FestoStationDriver
 {
 	// calculated values
 	uint8_t	Piece_sensor;
-	uint8_t	Color_sensor;
+	uint8_t	Colour_sensor;
 	uint8_t	Material_sensor;
 	uint8_t	Height_sensor;
 
 	// raw values
 	uint8_t	Piece_raw;
-	uint8_t	Color_raw;
+	uint8_t	Colour_raw;
 	uint8_t	Material_raw;
 	uint8_t	Height_raw;
 
@@ -68,20 +84,28 @@ typedef struct FestoStationDriver
 
 } FestoStationDriver;
 
-uint8_t Control_Platform(FestoStationDriver* Driver, uint8_t option);
-uint8_t Control_Ejector(FestoStationDriver* Driver, uint8_t option);
-uint8_t Control_Driver(FestoStationDriver* Driver, uint8_t option);
+uint8_t Festo_Control_Platform(FestoStationDriver* Driver, uint8_t option);
+uint8_t Festo_Control_Ejector(FestoStationDriver* Driver, uint8_t option);
+uint8_t Festo_Control_Driver(FestoStationDriver* Driver, uint8_t option);
+uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option);
+uint8_t	Festo_Sense_Piece_Placed(FestoStationDriver* Driver);
+uint8_t	Festo_Sense_Piece_Coloir(FestoStationDriver* Driver);
+uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver);
+uint8_t	Festo_Sense_Riser_Down(FestoStationDriver* Driver);
+uint8_t	Festo_Sense_Riser_Up(FestoStationDriver* Driver);
+uint8_t	Festo_Sense_Ejector_Ready(FestoStationDriver* Driver);
+uint8_t	Festo_Sense_Measure_Down(FestoStationDriver* Driver);
 
-uint8_t Init_FestoStationDriver(FestoStationDriver* Driver)
+uint8_t Festo_Driver_Init(FestoStationDriver* Driver)
 {
 	Driver->Piece_sensor = 0;
-	Driver->Color_sensor = 0;
+	Driver->Colour_sensor = 0;
 	Driver->Material_sensor = 0;
 	Driver->Height_sensor = 0;
 
 	// raw values
 	Driver->Piece_raw = 0;
-	Driver->Color_raw = 0;
+	Driver->Colour_raw = 0;
 	Driver->Material_raw = 0;
 	Driver->Height_raw = 0;
 
@@ -90,10 +114,11 @@ uint8_t Init_FestoStationDriver(FestoStationDriver* Driver)
 	Driver->Piece_state = 0;
 	Driver->Platform_state = 0;
 	Driver->Ejector_state = 0;
+
 	return 0;
 }
 
-uint8_t Control_Platform(FestoStationDriver* Driver, uint8_t option)
+uint8_t Festo_Control_Platform(FestoStationDriver* Driver, uint8_t option)
 {
 	if (Driver->Driver_state == FESTO_DISABLED)
 	{
@@ -102,13 +127,14 @@ uint8_t Control_Platform(FestoStationDriver* Driver, uint8_t option)
 
 	if (option == FESTO_PLATFORM_RAISE)
 	{
-		// raise platform
-		// check if the platform it is not raised yet
+		GPIO_write(Board_ACTUATOR_RISER_DOWN, 0);
+		GPIO_write(Board_ACTUATOR_RISER_UP, 1);
 	}
 	else if (option == FESTO_PLATFORM_LOWER)
 	{
-		// lower platform
-		// check if the platform it is not lowered yet
+		GPIO_write(Board_ACTUATOR_RISER_UP, 0);
+		GPIO_write(Board_ACTUATOR_RISER_DOWN, 1);
+
 	}
 	else
 	{
@@ -117,7 +143,8 @@ uint8_t Control_Platform(FestoStationDriver* Driver, uint8_t option)
 
 	return 0;
 }
-uint8_t Control_Ejector(FestoStationDriver* Driver, uint8_t option)
+
+uint8_t Festo_Control_Ejector(FestoStationDriver* Driver, uint8_t option)
 {
 	if (Driver->Driver_state == FESTO_DISABLED)
 	{
@@ -126,13 +153,11 @@ uint8_t Control_Ejector(FestoStationDriver* Driver, uint8_t option)
 
 	if (option == FESTO_EJECTOR_EXTEND)
 	{
-		// extend ejector
-		// check if the ejector is not extended yet
+		GPIO_write(Board_ACTUATOR_EJECTOR, 1);
 	}
 	else if (option == FESTO_EJECTOR_RETRACT)
 	{
-		// retract ejector
-		// check if the ejector is not retracted yet
+		GPIO_write(Board_ACTUATOR_EJECTOR, 0);
 	}
 	else
 	{
@@ -142,7 +167,7 @@ uint8_t Control_Ejector(FestoStationDriver* Driver, uint8_t option)
 	return 0;
 }
 
-uint8_t Control_Driver(FestoStationDriver* Driver, uint8_t option)
+uint8_t Festo_Control_Driver(FestoStationDriver* Driver, uint8_t option)
 {
 	if (option == FESTO_DISABLED)
 	{
@@ -156,7 +181,66 @@ uint8_t Control_Driver(FestoStationDriver* Driver, uint8_t option)
 	{
 		return 1;
 	}
+
 	return 0;
+}
+
+uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option)
+{
+	if (Driver->Driver_state == FESTO_DISABLED)
+	{
+		return 1;
+	}
+
+	if (option == FESTO_MEASURE_DOWN)
+	{
+		GPIO_write(Board_ACTUATOR_MEASURE_DOWN, 1);
+	}
+	else if (option == FESTO_MEASURE_UP)
+	{
+		GPIO_write(Board_ACTUATOR_MEASURE_DOWN, 0);
+	}
+	else
+	{
+		return 1;
+	}
+
+	return 0;
+}
+
+uint8_t	Festo_Sense_Piece_Placed(FestoStationDriver* Driver)
+{
+	return (uint8_t) GPIO_read(Board_SENSE_SAMPLE_IN_PLACE);
+}
+
+uint8_t	Festo_Sense_Piece_Colour(FestoStationDriver* Driver)
+{
+	return (uint8_t) GPIO_read(Board_SENSE_SAMPLE_COLOUR);
+}
+
+uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver)
+{
+	return (uint8_t) GPIO_read(Board_SENSE_SAMPLE_METALLIC);
+}
+
+uint8_t	Festo_Sense_Riser_Down(FestoStationDriver* Driver)
+{
+	return (uint8_t) GPIO_read(Board_SENSE_RISER_DOWN);
+}
+
+uint8_t	Festo_Sense_Riser_Up(FestoStationDriver* Driver)
+{
+	return (uint8_t) GPIO_read(Board_SENSE_RISER_UP);
+}
+
+uint8_t	Festo_Sense_Ejector_Ready(FestoStationDriver* Driver)
+{
+	return (uint8_t) GPIO_read(Board_SENSE_EJECTOR_READY);
+}
+
+uint8_t	Festo_Sense_Measure_Down(FestoStationDriver* Driver)
+{
+	return (uint8_t) GPIO_read(Board_SENSE_MEASURE_DOWN);
 }
 
 #endif

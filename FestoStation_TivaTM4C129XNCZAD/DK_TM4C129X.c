@@ -373,10 +373,10 @@ void DK_TM4C129X_initGPIO(void)
 	GPIOPadConfigSet(GPIO_PORTC_BASE, GPIO_PIN_5, GPIO_STRENGTH_4MA, GPIO_PIN_TYPE_STD_WPD);
 
 	GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_3);
-	ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
-	ADCSequenceStepConfigure(ADC0_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_CH0 | ADC_CTL_END);
-	ADCSequenceEnable(ADC0_BASE, 0);
-	ADCIntClear(ADC0_BASE, 0);
+//	ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
+//	ADCSequenceStepConfigure(ADC0_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_CH0 | ADC_CTL_END);
+//	ADCSequenceEnable(ADC0_BASE, 0);
+//	ADCIntClear(ADC0_BASE, 0);
 	/* FestoStation block end */
 
     /* Setup the button GPIO pins used */
