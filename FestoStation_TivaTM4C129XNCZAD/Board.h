@@ -109,6 +109,8 @@ extern "C" {
 
 #define Board_gpioCallbacks0        DK_TM4C129X_gpioPortPCallbacks
 #define Board_gpioCallbacks1        DK_TM4C129X_gpioPortNCallbacks
+#define Board_gpioCallbacks2        DK_TM4C129X_gpioPortECallbacks
+#define Board_gpioCallbacks3        DK_TM4C129X_gpioPortMCallbacks
 
 /* Board specific I2C addresses */
 #define Board_TMP006_ADDR           (0x40)

@@ -58,6 +58,8 @@ h. Return a height measurement
 #define FESTO_MEASURE_DOWN 0
 #define FESTO_MEASURE_UP 1
 
+#define FESTO_TIMEOUT 10
+
 extern uint32_t GPIO_read(unsigned int index);
 extern void 	GPIO_toggle(unsigned int index);
 extern void 	GPIO_write(unsigned int index, uint32_t value);
@@ -89,7 +91,7 @@ uint8_t Festo_Control_Ejector(FestoStationDriver* Driver, uint8_t option);
 uint8_t Festo_Control_Driver(FestoStationDriver* Driver, uint8_t option);
 uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option);
 uint8_t	Festo_Sense_Piece_Placed(FestoStationDriver* Driver);
-uint8_t	Festo_Sense_Piece_Coloir(FestoStationDriver* Driver);
+uint8_t	Festo_Sense_Piece_Colour(FestoStationDriver* Driver);
 uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver);
 uint8_t	Festo_Sense_Riser_Down(FestoStationDriver* Driver);
 uint8_t	Festo_Sense_Riser_Up(FestoStationDriver* Driver);
@@ -115,6 +117,11 @@ uint8_t Festo_Driver_Init(FestoStationDriver* Driver)
 	Driver->Platform_state = 0;
 	Driver->Ejector_state = 0;
 
+	GPIO_write(Board_ACTUATOR_RISER_DOWN, 0);
+	GPIO_write(Board_ACTUATOR_RISER_UP, 0);
+	GPIO_write(Board_ACTUATOR_EJECTOR, 0);
+	GPIO_write(Board_ACTUATOR_MEASURE_DOWN, 0);
+
 	return 0;
 }
 
@@ -128,12 +135,12 @@ uint8_t Festo_Control_Platform(FestoStationDriver* Driver, uint8_t option)
 	if (option == FESTO_PLATFORM_RAISE)
 	{
 		GPIO_write(Board_ACTUATOR_RISER_DOWN, 0);
-		GPIO_write(Board_ACTUATOR_RISER_UP, 1);
+		GPIO_write(Board_ACTUATOR_RISER_UP, 0xFFFF);
 	}
 	else if (option == FESTO_PLATFORM_LOWER)
 	{
 		GPIO_write(Board_ACTUATOR_RISER_UP, 0);
-		GPIO_write(Board_ACTUATOR_RISER_DOWN, 1);
+		GPIO_write(Board_ACTUATOR_RISER_DOWN, 0xFFFF);
 
 	}
 	else
@@ -153,7 +160,7 @@ uint8_t Festo_Control_Ejector(FestoStationDriver* Driver, uint8_t option)
 
 	if (option == FESTO_EJECTOR_EXTEND)
 	{
-		GPIO_write(Board_ACTUATOR_EJECTOR, 1);
+		GPIO_write(Board_ACTUATOR_EJECTOR, 0xFFFF);
 	}
 	else if (option == FESTO_EJECTOR_RETRACT)
 	{
@@ -194,7 +201,7 @@ uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option)
 
 	if (option == FESTO_MEASURE_DOWN)
 	{
-		GPIO_write(Board_ACTUATOR_MEASURE_DOWN, 1);
+		GPIO_write(Board_ACTUATOR_MEASURE_DOWN, 0xFFFF);
 	}
 	else if (option == FESTO_MEASURE_UP)
 	{
@@ -210,37 +217,37 @@ uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option)
 
 uint8_t	Festo_Sense_Piece_Placed(FestoStationDriver* Driver)
 {
-	return (uint8_t) GPIO_read(Board_SENSE_SAMPLE_IN_PLACE);
+	return (GPIO_read(Board_SENSE_SAMPLE_IN_PLACE) > 0);
 }
 
 uint8_t	Festo_Sense_Piece_Colour(FestoStationDriver* Driver)
 {
-	return (uint8_t) GPIO_read(Board_SENSE_SAMPLE_COLOUR);
+	return (GPIO_read(Board_SENSE_SAMPLE_COLOUR) > 0);
 }
 
 uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver)
 {
-	return (uint8_t) GPIO_read(Board_SENSE_SAMPLE_METALLIC);
+	return (GPIO_read(Board_SENSE_SAMPLE_METALLIC) > 0);
 }
 
 uint8_t	Festo_Sense_Riser_Down(FestoStationDriver* Driver)
 {
-	return (uint8_t) GPIO_read(Board_SENSE_RISER_DOWN);
+	return (GPIO_read(Board_SENSE_RISER_DOWN) > 0);
 }
 
 uint8_t	Festo_Sense_Riser_Up(FestoStationDriver* Driver)
 {
-	return (uint8_t) GPIO_read(Board_SENSE_RISER_UP);
+	return (GPIO_read(Board_SENSE_RISER_UP) > 0);
 }
 
 uint8_t	Festo_Sense_Ejector_Ready(FestoStationDriver* Driver)
 {
-	return (uint8_t) GPIO_read(Board_SENSE_EJECTOR_READY);
+	return (GPIO_read(Board_SENSE_EJECTOR_READY) > 0);
 }
 
 uint8_t	Festo_Sense_Measure_Down(FestoStationDriver* Driver)
 {
-	return (uint8_t) GPIO_read(Board_SENSE_MEASURE_DOWN);
+	return (GPIO_read(Board_SENSE_MEASURE_DOWN) > 0);
 }
 
 #endif

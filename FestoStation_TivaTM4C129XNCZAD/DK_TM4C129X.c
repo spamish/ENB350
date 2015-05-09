@@ -245,10 +245,11 @@ void DK_TM4C129X_initEMAC(void)
 
 #include <ti/drivers/GPIO.h>
 
-/* Callback functions for the GPIO interrupt example. */
-void gpioButtonFxn0(void);
-void gpioButtonFxn1(void);
-void gpioButtonFxn2(void);
+void _callback_Button_Up(void);
+void _callback_Button_Down(void);
+void _callback_Button_Select(void);
+void _callback_Festo_Riser_Down(void);
+void _callback_Festo_Riser_Up(void);
 
 /* GPIO configuration structure */
 const GPIO_HWAttrs gpioHWAttrs[DK_TM4C129X_GPIOCOUNT] = {
@@ -286,7 +287,7 @@ Hwi_Struct callbackPortPHwi;
 /* GPIO callback structure to set callbacks for GPIO interrupts */
 const GPIO_Callbacks DK_TM4C129X_gpioPortPCallbacks = {
     GPIO_PORTP_BASE, INT_GPIOP1, &callbackPortPHwi,
-    {NULL, gpioButtonFxn0, NULL, NULL, NULL, NULL, NULL, NULL}
+    {NULL, _callback_Button_Select, NULL, NULL, NULL, NULL, NULL, NULL}
 };
 
 /* Memory for the GPIO module to construct a Hwi */
@@ -294,7 +295,7 @@ Hwi_Struct callbackPortNHwi;
 
 const GPIO_Callbacks DK_TM4C129X_gpioPortNCallbacks = {
     GPIO_PORTN_BASE, INT_GPION, &callbackPortNHwi,
-    {NULL, NULL, NULL, gpioButtonFxn1, NULL, NULL, NULL, NULL}
+    {NULL, NULL, NULL, _callback_Button_Up, _callback_Festo_Riser_Up, NULL, NULL, NULL}
 };
 
 /* Memory for the GPIO module to construct a Hwi */
@@ -302,7 +303,15 @@ Hwi_Struct callbackPortEHwi;
 
 const GPIO_Callbacks DK_TM4C129X_gpioPortECallbacks = {
     GPIO_PORTE_BASE, INT_GPIOE, &callbackPortEHwi,
-    {NULL, NULL, NULL, NULL, NULL, gpioButtonFxn2, NULL, NULL}
+    {NULL, NULL, NULL, NULL, NULL, _callback_Button_Down, NULL, NULL}
+};
+
+/* Memory for the GPIO module to construct a Hwi */
+Hwi_Struct callbackPortMHwi;
+
+const GPIO_Callbacks DK_TM4C129X_gpioPortMCallbacks = {
+    GPIO_PORTM_BASE, INT_GPIOM, &callbackPortMHwi,
+    {_callback_Festo_Riser_Down, NULL, NULL, NULL, NULL, NULL, NULL, NULL}
 };
 
 const GPIO_Config GPIO_config[] = {

@@ -59,6 +59,7 @@ extern "C" {
 extern const GPIO_Callbacks DK_TM4C129X_gpioPortPCallbacks;
 extern const GPIO_Callbacks DK_TM4C129X_gpioPortNCallbacks;
 extern const GPIO_Callbacks DK_TM4C129X_gpioPortECallbacks;
+extern const GPIO_Callbacks DK_TM4C129X_gpioPortMCallbacks;
 
 /*!
  *  @def    DK_TM4C129X_EMACName

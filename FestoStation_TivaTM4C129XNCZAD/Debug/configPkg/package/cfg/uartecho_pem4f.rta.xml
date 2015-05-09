@@ -29,7 +29,7 @@
       <instanceId>3</instanceId>
     </metaArgs>
   </loggers>
-  <modMap-length>42</modMap-length>
+  <modMap-length>43</modMap-length>
   <modMap key="xdc.runtime.Assert">
     <id>1</id>
     <logger>null</logger>
@@ -135,108 +135,113 @@
     <logger>SYSBIOS System Logger</logger>
     <diagsMask>0000110033000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.knl.Queue">
+  <modMap key="ti.sysbios.knl.Mailbox">
     <id>25</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.knl.Semaphore">
+  <modMap key="ti.sysbios.knl.Queue">
     <id>26</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.knl.Task">
+  <modMap key="ti.sysbios.knl.Semaphore">
     <id>27</id>
+    <logger>null</logger>
+    <diagsMask>0000110000000000</diagsMask>
+  </modMap>
+  <modMap key="ti.sysbios.knl.Task">
+    <id>28</id>
     <logger>SYSBIOS System Logger</logger>
     <diagsMask>0000110033000000</diagsMask>
   </modMap>
   <modMap key="ti.sysbios.hal.Hwi">
-    <id>31</id>
+    <id>32</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
   <modMap key="ti.sysbios.heaps.HeapMem">
-    <id>33</id>
+    <id>34</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
   <modMap key="ti.sysbios.BIOS">
-    <id>35</id>
+    <id>36</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
   <modMap key="ti.uia.events.DvtTypes">
-    <id>37</id>
-    <logger>null</logger>
-    <diagsMask>0000110000000000</diagsMask>
-  </modMap>
-  <modMap key="ti.uia.events.UIAErr">
     <id>38</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.events.UIAEvt">
+  <modMap key="ti.uia.events.UIAErr">
     <id>39</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.runtime.EventHdr">
+  <modMap key="ti.uia.events.UIAEvt">
     <id>40</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.runtime.QueueDescriptor">
+  <modMap key="ti.uia.runtime.EventHdr">
     <id>41</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.runtime.UIAMetaData">
+  <modMap key="ti.uia.runtime.QueueDescriptor">
     <id>42</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.gates.GateHwi">
+  <modMap key="ti.uia.runtime.UIAMetaData">
     <id>43</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.gates.GateMutex">
+  <modMap key="ti.sysbios.gates.GateHwi">
     <id>44</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.m3.Hwi">
+  <modMap key="ti.sysbios.gates.GateMutex">
     <id>45</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.m3.IntrinsicsSupport">
+  <modMap key="ti.sysbios.family.arm.m3.Hwi">
     <id>46</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.m3.TaskSupport">
+  <modMap key="ti.sysbios.family.arm.m3.IntrinsicsSupport">
     <id>47</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.lm4.TimestampProvider">
+  <modMap key="ti.sysbios.family.arm.m3.TaskSupport">
     <id>48</id>
+    <logger>null</logger>
+    <diagsMask>0000110000000000</diagsMask>
+  </modMap>
+  <modMap key="ti.sysbios.family.arm.lm4.TimestampProvider">
+    <id>49</id>
     <logger>null</logger>
     <diagsMask>0000100000000000</diagsMask>
   </modMap>
   <modMap key="ti.sysbios.family.arm.lm4.Timer">
-    <id>49</id>
-    <logger>null</logger>
-    <diagsMask>0000110000000000</diagsMask>
-  </modMap>
-  <modMap key="ti.uia.loggers.LoggerStopMode">
     <id>50</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.utils.Load">
+  <modMap key="ti.uia.loggers.LoggerStopMode">
     <id>51</id>
+    <logger>null</logger>
+    <diagsMask>0000110000000000</diagsMask>
+  </modMap>
+  <modMap key="ti.sysbios.utils.Load">
+    <id>52</id>
     <logger>Load Logger</logger>
     <diagsMask>0000110000010000</diagsMask>
   </modMap>
