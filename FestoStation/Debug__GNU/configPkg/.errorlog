@@ -1,0 +1,24 @@
+js: "C:/ti/xdctools_3_31_00_24_core/packages/xdc/cfg/Main.xs", line 167: Error: xdc.cfg.INCOMPATIBLE_TARGET_VERSION: the compiler version [] used by the current target 'ti.targets.arm.elf.M4F' is not compatible with compiler version of targets used to build the following packages; package ti.catalog.arm.cortexm4.tiva.ce [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/catalog/arm/cortexm4/tiva/ce/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.targets.arm.rtsarm [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/targets/arm/rtsarm/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.knl [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.hal [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.heaps [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/heaps/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.uia.events [in C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/events/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.uia.runtime [in C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/runtime/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.syncs [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/syncs/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.uia.sysbios [in C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/sysbios/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.fatfs [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/fatfs/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.drivers [in C:/ti/tirtos_tivac_2_12_01_33/packages/ti/drivers/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.gates [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/gates/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.xdcruntime [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/xdcruntime/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.family.arm.m3 [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/m3/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.family.arm.lm4 [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/lm4/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.uia.loggers [in C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/loggers/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.sysbios.utils [in C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/utils/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+; package ti.uia.services [in C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/services/] was built using the target 'ti.targets.arm.elf.M4F' with compiler version [5.2.2].
+
+Adding the following line to your program configuration script:
+	environment['xdc.cfg.check.fatal'] = 'false';
+converts this incompatibility error into a warning. Please, check the documentation for the package xdc.cfg for more information.
+gmake.exe: *** [package/cfg/FestoStation_pem4f.xdl] Error 1

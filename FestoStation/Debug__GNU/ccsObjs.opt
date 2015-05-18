@@ -1,0 +1,1 @@
+"./DK_TM4C129X.o" "./FestoStation.o" "./frame.o" "./kentec320x240x16_ssd2119.o" "../DK_TM4C129X.cmd" -Wl,-T"../tm4c129xnczad.lds" -Wl,-T"./configPkg/linker.cmd" -Wl,--start-group -l"c" -Wl,--end-group 
