@@ -155,6 +155,29 @@ void DK_TM4C129X_initGeneral(void)
     // Festo Station block start
     SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
     // Festo Station block end
+
+    //LCD block Start
+    GPIOPinConfigure(GPIO_PF7_LCDDATA02);
+    GPIOPinConfigure(GPIO_PJ6_LCDAC);
+    GPIOPinConfigure(GPIO_PR0_LCDCP);
+    GPIOPinConfigure(GPIO_PR1_LCDFP);
+    GPIOPinConfigure(GPIO_PR2_LCDLP);
+    GPIOPinConfigure(GPIO_PR3_LCDDATA03);
+    GPIOPinConfigure(GPIO_PR4_LCDDATA00);
+    GPIOPinConfigure(GPIO_PR5_LCDDATA01);
+    GPIOPinConfigure(GPIO_PR6_LCDDATA04);
+    GPIOPinConfigure(GPIO_PR7_LCDDATA05);
+    GPIOPinConfigure(GPIO_PS4_LCDDATA06);
+    GPIOPinConfigure(GPIO_PS5_LCDDATA07);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_6);
+    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_6, GPIO_PIN_6);
+    GPIOPinTypeLCD(GPIO_PORTF_BASE, GPIO_PIN_7);
+    GPIOPinTypeLCD(GPIO_PORTJ_BASE, GPIO_PIN_6);
+    GPIOPinTypeLCD(GPIO_PORTR_BASE,
+                       (GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+                        GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7));
+    GPIOPinTypeLCD(GPIO_PORTS_BASE, GPIO_PIN_4 | GPIO_PIN_5);
+    // LCD block end
 }
 
 /*

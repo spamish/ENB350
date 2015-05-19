@@ -16,6 +16,9 @@ extern const ti_sysbios_knl_Task_Handle LCD;
 #include <ti/sysbios/knl/Task.h>
 extern const ti_sysbios_knl_Task_Handle FESTO;
 
+#include <ti/sysbios/knl/Task.h>
+extern const ti_sysbios_knl_Task_Handle ADC;
+
 #include <ti/sysbios/knl/Event.h>
 extern const ti_sysbios_knl_Event_Handle FestoEvents;
 

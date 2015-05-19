@@ -34,17 +34,51 @@
 #include "utils/ustdlib.h"
 #include "inc/hw_memmap.h"
 
-
+uint32_t 	piecesProcessed = 0;
+uint32_t 	orangeAccepted = 0;
+uint32_t 	orangeRejected = 0;
+uint32_t 	blackAccepted = 0;
+uint32_t 	blackRejected = 0;
+uint32_t 	metalAccepted = 0;
+uint32_t 	metalRejected = 0;
+uint32_t 	plasticAccepted = 0;
+uint32_t 	plasticRejected = 0;
+float		piecesProcessedPerSecond = 0.0f;
+float		heightMeasured = 0.0f;
+float		heightCalibrated = 25.6f;
+float		upperHeightCalibrated = 25.8f;
+float		lowerHeightCalibrated = 25.4f;
+float 		heightConstantADC = 1.0f;
+uint32_t	timeHMS[3] = {0,0,0};
+uint32_t	uptimeSeconds = 0;
 
 Int bufferCounter = 0;
 Char buffer[50];
 Semaphore_Handle bufferSem;
 
-typedef struct MsgObj
+typedef struct DisplayMessage
 {
-    uint8_t		id;             /* writer task id */
-    char*		string_ptr;     /* message value */
-} MsgObj;
+    uint32_t	ScreenID;
+	uint32_t 	piecesProcessed;
+	uint32_t 	orangeAccepted;
+	uint32_t 	orangeRejected;
+	uint32_t 	blackAccepted;
+	uint32_t 	blackRejected;
+	uint32_t 	metalAccepted;
+	uint32_t 	metalRejected;
+	uint32_t 	plasticAccepted;
+	uint32_t 	plasticRejected;
+	uint32_t	piecesProcessedPerSecond;
+	uint32_t	heightMeasured;
+	uint32_t	heightCalibrated;
+	uint32_t	upperHeightCalibrated;
+	uint32_t	lowerHeightCalibrated;
+	uint32_t	timeHours;
+	uint32_t	timeMinutes;
+	uint32_t	timeSeconds;
+	uint32_t	uptimeSeconds;
+	uint32_t	reserved;
+}	DisplayMessage;
 
 
 /*
@@ -107,20 +141,27 @@ Void _task_LCD(UArg arg0, UArg arg1)
 	// draw application frame
 	FrameDraw(&g_sContext, "Festo Station");
 
+	uint32_t EventPosted;
+
+	DisplayMessage MessageObject;
+
 	while(1)
 	{
-		GrStringDraw(&g_sContext,
-				"LCD_update FESTO 12", 19, 25, GrContextDpyHeightGet(&g_sContext)/2, 1);
-		ADCProcessorTrigger(ADC0_BASE, 0);
-		while(!ADCIntStatus(ADC0_BASE, 0, false))
-		{
-		}
-		uint32_t adcdata;
-		ADCSequenceDataGet(ADC0_BASE, 0, &adcdata);
+		EventPosted = Event_pend(DisplayEvents,
+						Event_Id_NONE,
+						Event_Id_00,
+						10);
 
-	    System_printf("ADC data: %d\n", adcdata);
-	    System_flush();
-		Task_sleep(1000);
+		if (EventPosted & Event_Id_00)
+		{
+			 if (Mailbox_pend(DisplayMailbox, &MessageObject, BIOS_NO_WAIT))
+			 {
+				 // something need to be draw
+				 // code goes here
+			 }
+		}
+
+		Task_sleep(16);
 	}
 }
 
@@ -135,36 +176,43 @@ Void _task_LCD(UArg arg0, UArg arg1)
 //! \return None.
 //
 //*****************************************************************************
-Void _task_Festo(UArg arg0, UArg arg1)
+Void _task_FESTO(UArg arg0, UArg arg1)
 {
+	// initialize driver
 	FestoStationDriver Driver;
 
     Festo_Driver_Init(&Driver);
+
+    // Enable Station
     Festo_Control_Driver(&Driver, FESTO_ENABLED);
 
 	uint32_t EventPosted;
+
+	DisplayMessage MessageObject;
 
 	while(1)
 	{
 		EventPosted = Event_pend(FestoEvents,
 						Event_Id_NONE,
-						Event_Id_00 + Event_Id_01 + Event_Id_02 + Event_Id_03 + Event_Id_04,
+						FESTO_EVENT_BUTTON_UP + FESTO_EVENT_BUTTON_DOWN +
+						FESTO_EVENT_BUTTON_SELECT + FESTO_EVENT_RISER_DOWN +
+						FESTO_EVENT_RISER_UP + FESTO_EVENT_ADC_FINISH,
 						FESTO_TIMEOUT);
 
-		if (EventPosted & Event_Id_00)
+		if (EventPosted & FESTO_EVENT_BUTTON_UP)
 		{
 			GPIO_toggle(Board_LED0);
 			Festo_Control_Platform(&Driver, FESTO_PLATFORM_RAISE);
 		}
-		else if (EventPosted & Event_Id_01)
+		else if (EventPosted & FESTO_EVENT_BUTTON_DOWN)
 		{
 			GPIO_toggle(Board_LED1);
 			Festo_Control_Platform(&Driver, FESTO_PLATFORM_LOWER);
 		}
-		else if (EventPosted & Event_Id_02)
+		else if (EventPosted & FESTO_EVENT_BUTTON_SELECT)
 		{
 			GPIO_toggle(Board_LED2);
-			ADCProcessorTrigger(ADC0_BASE, 0);
+			Event_post(FestoEvents, FESTO_EVENT_ADC_START);
 		}
 		else if (EventPosted & Event_Id_03)
 		{
@@ -172,27 +220,75 @@ Void _task_Festo(UArg arg0, UArg arg1)
 		else if (EventPosted & Event_Id_04)
 		{
 		}
-		else if (EventPosted & Event_Id_05)
+		else if (EventPosted & FESTO_EVENT_ADC_FINISH)
 		{
-			uint32_t adcdata;
-			ADCSequenceDataGet(ADC0_BASE, 0, &adcdata);
-		    System_printf("ADC data: %d\n", adcdata);
+		    System_printf("ADC data: %d\n", heightMeasured);
 		    System_flush();
+		    Mailbox_post(DisplayMailbox, &MessageObject, 0);
 		}
 		else
 		{
 		}
 		Task_sleep(10);
 	}
-
-//	Mailbox_Params mbxParams;
-//    Mailbox_Params_init(&mbxParams);
-//    mbxParams.readerEvent = evt;
-//    mbxParams.readerEventId = Event_Id_02;
-//    mbx = Mailbox_create(sizeof(MsgObj), 2, &mbxParams, NULL);
-
-
 }
+
+//*****************************************************************************
+//
+//! ADC conversion Task.
+//!
+//! This task function do all the work related to the ADC conversion real
+//!
+//! \return None.
+//
+//*****************************************************************************
+Void _task_ADC(UArg arg0, UArg arg1)
+{
+	// initialize ADC
+	ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
+	ADCSequenceStepConfigure(ADC0_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_CH0 | ADC_CTL_END);
+	ADCSequenceEnable(ADC0_BASE, 0);
+	ADCSoftwareOversampleConfigure(ADC0_BASE, 0, 64);
+	ADCIntClear(ADC0_BASE, 0);
+	ADCIntEnable(ADC0_BASE, 0);
+
+	// data from ADC
+	uint32_t AdcDataRaw = 0;
+
+	uint32_t EventPosted;
+
+	while(1)
+	{
+		EventPosted = Event_pend(FestoEvents,
+						Event_Id_NONE,
+						FESTO_EVENT_ADC_START,
+						0);
+
+		if (EventPosted & FESTO_EVENT_ADC_START)
+		{
+			// start an ADC reading
+			ADCProcessorTrigger(ADC0_BASE, 0);
+		}
+		else
+		{
+			if (ADCIntStatus(ADC0_BASE, 0, false))
+			{
+				// ADC reading complete
+				ADCSequenceDataGet(ADC0_BASE, 0, &AdcDataRaw);
+				ADCIntClear(ADC0_BASE, 0);
+				//lock resource
+				// convert ADC reading to [mm]
+				heightMeasured = AdcDataRaw * 1; //should be a constant
+			    System_printf("ADC data: %d\n", AdcDataRaw);
+			    System_flush();
+				//unlock resource
+			    Event_post(FestoEvents, FESTO_EVENT_ADC_FINISH);
+			}
+		}
+		Task_sleep(100);
+	}
+}
+
 
 //*****************************************************************************
 //
@@ -276,21 +372,6 @@ void _callback_Festo_Riser_Up(void)
 
 //*****************************************************************************
 //
-//! ISR for the ADC0 conversion.
-//!
-//! This function is executed when the conversion is finished on ADC0.
-//!
-//! \return None.
-//
-//*****************************************************************************
-void _ISR_ADC0(void)
-{
-    Event_post(FestoEvents, Event_Id_05);
-    ADCIntClear(ADC0_BASE, 0);
-}
-
-//*****************************************************************************
-//
 //! Main application function.
 //!
 //! This function is meant to initialize all devices and tasks used in this
@@ -316,13 +397,6 @@ int main(void)
     GPIO_write(Board_LED0, Board_LED_OFF);
     GPIO_write(Board_LED1, Board_LED_OFF);
     GPIO_write(Board_LED2, Board_LED_OFF);
-
-	ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
-	ADCSequenceStepConfigure(ADC0_BASE, 0, 0, ADC_CTL_IE | ADC_CTL_CH0 | ADC_CTL_END);
-	ADCSequenceEnable(ADC0_BASE, 0);
-	ADCSoftwareOversampleConfigure(ADC0_BASE, 0, 64);
-	ADCIntClear(ADC0_BASE, 0);
-	ADCIntEnable(ADC0_BASE, 0);
 
 	// Initializes interrupts
     GPIO_setCallback(Board_BUTTON0, _callback_Button_Select);

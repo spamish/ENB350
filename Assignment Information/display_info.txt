@@ -108,7 +108,7 @@ Footer:
 Uptime: SSSS [s]
 Time: HH:MM:SS
 
-State 5 (Calibration)
+State 7 (Calibration)
 Header: 
 Festo Station - Calibration
 

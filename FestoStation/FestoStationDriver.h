@@ -60,9 +60,18 @@ h. Return a height measurement
 
 #define FESTO_TIMEOUT 10
 
+#define FESTO_EVENT_BUTTON_UP 		Event_Id_00
+#define FESTO_EVENT_BUTTON_DOWN 	Event_Id_01
+#define FESTO_EVENT_BUTTON_SELECT	Event_Id_02
+#define FESTO_EVENT_RISER_DOWN		Event_Id_03
+#define FESTO_EVENT_RISER_UP 		Event_Id_04
+#define FESTO_EVENT_ADC_START		Event_Id_05
+#define FESTO_EVENT_ADC_FINISH		Event_Id_06
+
 extern uint32_t GPIO_read(unsigned int index);
 extern void 	GPIO_toggle(unsigned int index);
 extern void 	GPIO_write(unsigned int index, uint32_t value);
+extern float heightMeasured;
 
 typedef struct FestoStationDriver
 {
@@ -71,12 +80,6 @@ typedef struct FestoStationDriver
 	uint8_t	Colour_sensor;
 	uint8_t	Material_sensor;
 	uint8_t	Height_sensor;
-
-	// raw values
-	uint8_t	Piece_raw;
-	uint8_t	Colour_raw;
-	uint8_t	Material_raw;
-	uint8_t	Height_raw;
 
 	// state variables
 	uint8_t Driver_state;
@@ -104,12 +107,6 @@ uint8_t Festo_Driver_Init(FestoStationDriver* Driver)
 	Driver->Colour_sensor = 0;
 	Driver->Material_sensor = 0;
 	Driver->Height_sensor = 0;
-
-	// raw values
-	Driver->Piece_raw = 0;
-	Driver->Colour_raw = 0;
-	Driver->Material_raw = 0;
-	Driver->Height_raw = 0;
 
 	// state variables
 	Driver->Driver_state = FESTO_DISABLED;
