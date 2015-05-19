@@ -1,0 +1,120 @@
+// global variables available
+uint32_t piecesProcessed;
+uint32_t orangeAccepted;
+uint32_t orangeRejected;
+uint32_t blackAccepted;
+uint32_t blackRejected;
+uint32_t metalAccepted;
+uint32_t metalRejected;
+uint32_t plasticAccepted;
+uint32_t plasticRejected;
+float	piecesProcessedPerSecond;
+float	heightCalibrated;
+float	upperHeightCalibrated;
+float	lowerHeightCalibrated;
+uint32_t[3]	timeHMS;
+uint32_t	uptimeSeconds;
+//
+
+The display thread shall receive a message with an ID, which defines what kind of screen it should draw.
+
+There are 3 possible states of the Station. Stopped, Running and Calibration. Each state can be the ID of the message.
+The Header is what appear on top of display. Body is what go in the middle. Footer is what go on the last lines. 
+
+State 0 (Stopped)
+Header: 
+Festo Station - Stopped
+
+Body:
+Press [Up] to start.
+Press [Down] do stop.
+Press [Select] to calibrate.
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
+
+State 1 (Running)
+Header: 
+Festo Station - Running
+
+Body:
+Pieces processed = XXX
+Orange A/R =  XXX / XXX
+Black A/R  =  XXX / XXX
+Metal A/R  =  XXX / XXX
+Plastic A/R = XXX / XXX
+Pieces processed/sec = XXX [p/s]
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
+
+State 2 (Calibration)
+Header: 
+Festo Station - Calibration
+
+Body:
+Initializing Calibration...
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
+
+State 3 (Calibration)
+Header: 
+Festo Station - Calibration
+
+Body:
+Put the standard piece on platform and press [Select].
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
+
+State 4 (Calibration)
+Header: 
+Festo Station - Calibration
+
+Body:
+Set the height of the piece using [Up] and [Down]. When finished, press [Select].
+Height = XX.X [mm]
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
+
+State 5 (Calibration)
+Header: 
+Festo Station - Calibration
+
+Body:
+Set the upper limit of the piece using [Up] and [Down]. When finished, press [Select].
+Upper limit = XX.X [mm]
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
+
+State 6 (Calibration)
+Header: 
+Festo Station - Calibration
+
+Body:
+Set the lower limit of the piece using [Up] and [Down]. When finished, press [Select].
+Lower limit = XX.X [mm]
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
+
+State 5 (Calibration)
+Header: 
+Festo Station - Calibration
+
+Body:
+The Festo Station was calibrated with success!
+
+Footer:
+Uptime: SSSS [s]
+Time: HH:MM:SS
