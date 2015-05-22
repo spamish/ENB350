@@ -16,6 +16,9 @@ extern const ti_sysbios_knl_Task_Handle LCD;
 #include <ti/sysbios/knl/Task.h>
 extern const ti_sysbios_knl_Task_Handle FESTO;
 
+#include <ti/sysbios/knl/Task.h>
+extern const ti_sysbios_knl_Task_Handle ADC;
+
 #include <ti/sysbios/knl/Event.h>
 extern const ti_sysbios_knl_Event_Handle FestoEvents;
 
@@ -30,16 +33,4 @@ extern const ti_sysbios_knl_Mailbox_Handle DisplayMailbox;
 extern int xdc_runtime_Startup__EXECFXN__C;
 
 extern int xdc_runtime_Startup__RESETFXN__C;
-
-#ifndef ti_sysbios_knl_Task__include
-#ifndef __nested__
-#define __nested__
-#include <ti/sysbios/knl/Task.h>
-#undef __nested__
-#else
-#include <ti/sysbios/knl/Task.h>
-#endif
-#endif
-
-extern ti_sysbios_knl_Task_Struct TSK_idle;
 

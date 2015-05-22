@@ -129,7 +129,6 @@ FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/package
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/package/Task_SupportProxy.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h
-FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Event.h
 FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
 FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h
@@ -162,6 +161,9 @@ FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/package
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Clock.h
 FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Event.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Mailbox.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Clock.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
 FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h
 FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
 FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h
@@ -200,6 +202,7 @@ FestoStation.obj: ../DK_TM4C129X.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/packages/ti/drivers/GPIO.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/packages/ti/drivers/UART.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stddef.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Clock.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/Hwi.h
 FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
@@ -230,11 +233,26 @@ FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/package
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/interfaces/IHwi.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
+FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h
+FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/linkage.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/Seconds.h
+FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/interfaces/ISeconds.h
+FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
+FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/package/Seconds_SecondsProxy.h
+FestoStation.obj: C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/interfaces/ISeconds.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/package/Seconds_SecondsProxy.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdbool.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/yvals.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h
-FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/linkage.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/_lock.h
+FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdio.h
+FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h
+FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/utils/ustdlib.h
+FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h
+FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/rom.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/adc.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/sysctl.h
@@ -244,9 +262,6 @@ FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/grlib/widget.h
 FestoStation.obj: ../drivers/frame.h
 FestoStation.obj: ../drivers/kentec320x240x16_ssd2119.h
-FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/utils/ustdlib.h
-FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h
-FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/inc/hw_memmap.h
 
 ../FestoStation.c: 
@@ -378,7 +393,6 @@ C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/T
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/package/Task_SupportProxy.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h: 
-C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Event.h: 
 C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IInstance.h: 
@@ -411,6 +425,9 @@ C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/T
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Clock.h: 
 C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Event.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Mailbox.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Clock.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
 C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/System.h: 
 C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h: 
@@ -449,6 +466,7 @@ C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/S
 C:/ti/tirtos_tivac_2_12_01_33/packages/ti/drivers/GPIO.h: 
 C:/ti/tirtos_tivac_2_12_01_33/packages/ti/drivers/UART.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stddef.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Clock.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/knl/Task.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/Hwi.h: 
 C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
@@ -479,11 +497,26 @@ C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/BIOS.
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/interfaces/IHwi.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/linkage.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/Seconds.h: 
+C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/interfaces/ISeconds.h: 
+C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/IModule.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/package/Seconds_SecondsProxy.h: 
+C:/ti/xdctools_3_31_00_24_core/packages/xdc/runtime/Types.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/interfaces/ISeconds.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/package/Seconds_SecondsProxy.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdbool.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/yvals.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/linkage.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/_lock.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdio.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h: 
+C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/utils/ustdlib.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/rom.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/adc.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/sysctl.h: 
@@ -493,7 +526,4 @@ C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/grlib/grli
 C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/grlib/widget.h: 
 ../drivers/frame.h: 
 ../drivers/kentec320x240x16_ssd2119.h: 
-C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/utils/ustdlib.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h: 
-C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/inc/hw_memmap.h: 

@@ -8,9 +8,6 @@
 #include <xdc/std.h>
 
 #include <ti/sysbios/knl/Task.h>
-extern const ti_sysbios_knl_Task_Handle echo;
-
-#include <ti/sysbios/knl/Task.h>
 extern const ti_sysbios_knl_Task_Handle LCD;
 
 #include <ti/sysbios/knl/Task.h>
@@ -27,6 +24,12 @@ extern const ti_sysbios_knl_Event_Handle DisplayEvents;
 
 #include <ti/sysbios/knl/Mailbox.h>
 extern const ti_sysbios_knl_Mailbox_Handle DisplayMailbox;
+
+#include <ti/sysbios/knl/Mailbox.h>
+extern const ti_sysbios_knl_Mailbox_Handle ADCMailbox;
+
+#include <ti/sysbios/knl/Clock.h>
+extern const ti_sysbios_knl_Clock_Handle Clock_1_sec;
 
 #define TI_DRIVERS_WIFI_INCLUDED 0
 

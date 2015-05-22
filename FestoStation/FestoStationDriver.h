@@ -67,11 +67,16 @@ h. Return a height measurement
 #define FESTO_EVENT_RISER_UP 		Event_Id_04
 #define FESTO_EVENT_ADC_START		Event_Id_05
 #define FESTO_EVENT_ADC_FINISH		Event_Id_06
+#define FESTO_EVENT_PIECE_IN_PLACE	Event_Id_07
+#define FESTO_EVENT_EJECTOR_FINISHED Event_Id_08
+#define FESTO_EVENT_TICK			Event_Id_09
+#define FESTO_EVENT_COOLDOWN		Event_Id_10
+#define FESTO_EVENT_PIECE_NOT_IN_PLACE	Event_Id_11
 
 extern uint32_t GPIO_read(unsigned int index);
 extern void 	GPIO_toggle(unsigned int index);
 extern void 	GPIO_write(unsigned int index, uint32_t value);
-extern float heightMeasured;
+
 
 typedef struct FestoStationDriver
 {
@@ -79,7 +84,7 @@ typedef struct FestoStationDriver
 	uint8_t	Piece_sensor;
 	uint8_t	Colour_sensor;
 	uint8_t	Material_sensor;
-	uint8_t	Height_sensor;
+	uint32_t	Height_sensor;
 
 	// state variables
 	uint8_t Driver_state;
@@ -96,6 +101,8 @@ uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option);
 uint8_t	Festo_Sense_Piece_Placed(FestoStationDriver* Driver);
 uint8_t	Festo_Sense_Piece_Colour(FestoStationDriver* Driver);
 uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver);
+uint32_t	Festo_Sense_Piece_Height(FestoStationDriver* Driver);
+void	Festo_Sense_Set_Piece_Height(FestoStationDriver* Driver, uint32_t height);
 uint8_t	Festo_Sense_Riser_Down(FestoStationDriver* Driver);
 uint8_t	Festo_Sense_Riser_Up(FestoStationDriver* Driver);
 uint8_t	Festo_Sense_Ejector_Ready(FestoStationDriver* Driver);
@@ -214,17 +221,31 @@ uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option)
 
 uint8_t	Festo_Sense_Piece_Placed(FestoStationDriver* Driver)
 {
-	return (GPIO_read(Board_SENSE_SAMPLE_IN_PLACE) > 0);
+	Driver->Piece_sensor = (GPIO_read(Board_SENSE_SAMPLE_IN_PLACE) > 0);
+	return Driver->Piece_sensor;
 }
 
 uint8_t	Festo_Sense_Piece_Colour(FestoStationDriver* Driver)
 {
-	return (GPIO_read(Board_SENSE_SAMPLE_COLOUR) > 0);
+	Driver->Colour_sensor = (GPIO_read(Board_SENSE_SAMPLE_COLOUR) > 0);
+	return Driver->Colour_sensor;
 }
 
 uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver)
 {
-	return (GPIO_read(Board_SENSE_SAMPLE_METALLIC) > 0);
+	Driver->Material_sensor = (GPIO_read(Board_SENSE_SAMPLE_METALLIC) > 0);
+	return Driver->Material_sensor;
+}
+
+uint32_t	Festo_Sense_Piece_Height(FestoStationDriver* Driver)
+{
+	return Driver->Height_sensor;
+}
+
+void Festo_Sense_Set_Piece_Height(FestoStationDriver* Driver, uint32_t height)
+{
+	Driver->Height_sensor = height;
+	return;
 }
 
 uint8_t	Festo_Sense_Riser_Down(FestoStationDriver* Driver)
