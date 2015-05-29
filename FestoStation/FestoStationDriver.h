@@ -119,8 +119,8 @@ uint8_t Festo_Driver_Init(FestoStationDriver* Driver)
 	Driver->Driver_state = FESTO_DISABLED;
 	Driver->Piece_state = 0;
 	Driver->Platform_state = 0;
-	Driver->Ejector_state = 0;
 
+	Driver->Ejector_state = 0;
 	GPIO_write(Board_ACTUATOR_RISER_DOWN, 0);
 	GPIO_write(Board_ACTUATOR_RISER_UP, 0);
 	GPIO_write(Board_ACTUATOR_EJECTOR, 0);
