@@ -40,6 +40,7 @@
 #include "utils/ustdlib.h"
 #include "inc/hw_memmap.h"
 
+/* Set variables */
 uint32_t 	piecesProcessed = 0;
 uint32_t 	orangeAccepted = 0;
 uint32_t 	orangeRejected = 0;
@@ -57,6 +58,7 @@ float 		heightConstantADC = 1.0f;
 uint32_t	timeHMS[3] = {0,0,0};
 uint32_t	uptimeSeconds = 0;
 
+/* Set content to display on the screen */
 typedef struct DisplayMessage
 {
     uint32_t	ScreenID;
@@ -83,12 +85,7 @@ typedef struct DisplayMessage
 
 void _Festo_Deactivate_Ejector(UArg arg0);
 
-
-
-
-/**
-    Task for updating the LCD display every 16ms.
-*/
+/* Task for updating the LCD display every 16ms. */
 Void _task_LCD(UArg arg0, UArg arg1)
 {
 	// create the LCD context
@@ -117,25 +114,29 @@ Void _task_LCD(UArg arg0, UArg arg1)
 
 	while(1)
 	{
+		// Wake the task when event 0 occurs.
 		EventPosted = Event_pend(DisplayEvents,
 						Event_Id_NONE,
 						Event_Id_00,
 						10);
-
+		
+		// If an action occurs and the screen should be updated.
 		if (EventPosted & Event_Id_00)
 		{
 			 if (Mailbox_pend(DisplayMailbox, &MessageObject, BIOS_NO_WAIT))
 			 {
 				GrContextForegroundSet(&g_sContext, 0x00);
 				GrRectFill(&g_sContext, &ClearRect);
+				
+				// Station stopped
 				if (MessageObject.ScreenID == 0)
 				{
+					// Display options on stopped screen
 					FrameDraw(&g_sContext, "Festo Station - Stopped");
 
 					GrStringDraw(&g_sContext, "Press [Up] to start.", 	-1, 10, 30, 0);
 					GrStringDraw(&g_sContext, "Press [Down] to stop.", 	-1, 10, 50, 0);
 					GrStringDraw(&g_sContext, "Press [Select] to calibrate.", 	-1, 10, 70, 0);
-
 
 					//Footer
 					sprintf(StringBuffer, "Uptime: %d [s]", MessageObject.uptimeSeconds);
@@ -145,8 +146,10 @@ Void _task_LCD(UArg arg0, UArg arg1)
 					GrStringDraw(&g_sContext, StringBuffer, 	-1, 100, 200, 0);
 				}
 
+				// Station running
 				if (MessageObject.ScreenID == 1)
 				{
+					// Display details on running screen
 					FrameDraw(&g_sContext, "Festo Station - Running");
 
 					sprintf(StringBuffer, "Pieces processed = %d", MessageObject.piecesProcessed);
@@ -171,6 +174,8 @@ Void _task_LCD(UArg arg0, UArg arg1)
 				    sprintf(StringBuffer, "Time: %d:%d:%d", MessageObject.timeHours, MessageObject.timeMinutes, MessageObject.timeSeconds);
 					GrStringDraw(&g_sContext, StringBuffer, 	-1, 100, 200, 0);
 				}
+				
+				// Calibration of station initialising
 				if (MessageObject.ScreenID == 2)
 				{
 					FrameDraw(&g_sContext, "Festo Station - Calibration");
@@ -185,6 +190,8 @@ Void _task_LCD(UArg arg0, UArg arg1)
 					GrStringDraw(&g_sContext, StringBuffer, 	-1, 100, 200, 0);
 
 				}
+				
+				// Placing sample piece for calibration
 				if (MessageObject.ScreenID == 3)
 				{
 					FrameDraw(&g_sContext, "Festo Station - Calibration");
@@ -200,6 +207,8 @@ Void _task_LCD(UArg arg0, UArg arg1)
 
 
 				}
+				
+				// Setting base height of piece
 				if (MessageObject.ScreenID == 4)
 				{
 					FrameDraw(&g_sContext, "Festo Station - Calibration");
@@ -216,6 +225,7 @@ Void _task_LCD(UArg arg0, UArg arg1)
 					GrStringDraw(&g_sContext, StringBuffer, 	-1, 100, 200, 0);
 				}
 
+				// Setting upper limit of piece
 				if (MessageObject.ScreenID == 5)
 				{
 					FrameDraw(&g_sContext, "Festo Station - Calibration");
@@ -233,6 +243,8 @@ Void _task_LCD(UArg arg0, UArg arg1)
 					sprintf(StringBuffer, "Time: %d:%d:%d", MessageObject.timeHours, MessageObject.timeMinutes, MessageObject.timeSeconds);
 					GrStringDraw(&g_sContext, StringBuffer, 	-1, 100, 200, 0);
 				}
+				
+				// Setting lower limit of piece
 				if (MessageObject.ScreenID == 6)
 				{
 					FrameDraw(&g_sContext, "Festo Station - Calibration");
@@ -251,6 +263,8 @@ Void _task_LCD(UArg arg0, UArg arg1)
 					sprintf(StringBuffer, "Time: %d:%d:%d", MessageObject.timeHours, MessageObject.timeMinutes, MessageObject.timeSeconds);
 					GrStringDraw(&g_sContext, StringBuffer, 	-1, 100, 200, 0);
 				}
+				
+				// Confirmation of calibration
 				if (MessageObject.ScreenID == 7)
 				{
 					FrameDraw(&g_sContext, "Festo Station - Calibration");
@@ -265,6 +279,7 @@ Void _task_LCD(UArg arg0, UArg arg1)
 				}
 			 }
 		}
+		// Set task to not run again within 16ms
 		Task_sleep(16);
 	}
 }
@@ -365,6 +380,7 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 
 	while(1)
 	{
+		/* Wake the task when an event on the board takes place */
 		EventPosted = Event_pend(FestoEvents,
 						Event_Id_NONE,
 						FESTO_EVENT_BUTTON_UP + FESTO_EVENT_BUTTON_DOWN +
@@ -375,76 +391,94 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 						FESTO_EVENT_PIECE_NOT_IN_PLACE,
 						FESTO_TIMEOUT);
 
+		// Up button is pressed
 		if (EventPosted & FESTO_EVENT_BUTTON_UP)
 		{
+			// If driver is stopped
 			if (FestoState == 0)
 			{
 				Festo_Control_Driver(Driver, FESTO_ENABLED);
+				
+				// Set to running
 				FestoState = 1;
 				Running = 1;
+				
+				// Set LED to green
 				GPIO_write(Board_LED0, Board_LED_ON);
 				GPIO_write(Board_LED1, Board_LED_OFF);
 				GPIO_write(Board_LED2, Board_LED_OFF);
+				
+				// Display appropriate screen
 				MessageObject.ScreenID = 1;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
+				
+				// Update time
 				Time0 = Clock_getTicks();
-			}
+			} // Increment base height
 			else if (FestoState == 12)
 			{
 				MessageObject.heightCalibrated++;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
-			}
+			} // Increment upper limit
 			else if (FestoState == 13)
 			{
 				MessageObject.upperHeightCalibrated++;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
-			}
+			} // Increment lower limit
 			else if (FestoState == 14)
 			{
 				MessageObject.lowerHeightCalibrated++;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
 			}
-		}
+		} // Down button is pressed
 		else if (EventPosted & FESTO_EVENT_BUTTON_DOWN)
 		{
+			// If driver is running
 			if (FestoState == 1)
 			{
 				Festo_Control_Ejector(Driver, FESTO_EJECTOR_RETRACT);
 				Festo_Control_Platform(Driver, FESTO_PLATFORM_LOWER);
 				Festo_Control_Driver(Driver, FESTO_DISABLED);
+				
+				// Set to stopped
 				FestoState = 0;
 				Running = 0;
+				
+				// Set LED to red
 				GPIO_write(Board_LED0, Board_LED_OFF);
 				GPIO_write(Board_LED1, Board_LED_OFF);
 				GPIO_write(Board_LED2, Board_LED_ON);
-			}
+			} // Decrement base height
 			else if (FestoState == 12)
 			{
 				MessageObject.heightCalibrated--;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
-			}
+			} // Decrement upper limit
 			else if (FestoState == 13)
 			{
 				MessageObject.upperHeightCalibrated--;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
-			}
+			} // Decrement lower limit
 			else if (FestoState == 14)
 			{
 				MessageObject.lowerHeightCalibrated--;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
 			}
-		}
+		} // Select button is pressed
 		else if (EventPosted & FESTO_EVENT_BUTTON_SELECT)
 		{
+			// If driver is stopped
 			if (FestoState == 0)
 			{
+				// Set LED to blue
 				GPIO_write(Board_LED0, Board_LED_OFF);
 				GPIO_write(Board_LED1, Board_LED_ON);
 				GPIO_write(Board_LED2, Board_LED_OFF);
 
 				Festo_Control_Driver(Driver, FESTO_ENABLED);
+				
+				// Set to calibrate
 				FestoState = 10;
-
 				MessageObject.ScreenID = 2;
 
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
@@ -460,25 +494,28 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 					MessageObject.ScreenID = 3;
 					Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
 				}
-			}
+			} // If calibration initialising
 			else if (FestoState == 11)
 			{
+				// Set to calibrate base height
 				FestoState = 12;
 				MessageObject.ScreenID = 4;
 				MessageObject.heightCalibrated = 230;
 
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
-			}
+			} // If base height set
 			else if (FestoState == 12)
 			{
+				// Set to calibrate upper limit
 				FestoState = 13;
 
 				Festo_Control_Platform(Driver, FESTO_PLATFORM_RAISE);
 
 				Event_post(FestoEvents, FESTO_EVENT_ADC_START);
-			}
+			} // If upper limit set
 			else if (FestoState == 13)
 			{
+				// Set to calibrate lower limit
 				FestoState = 14;
 				MessageObject.ScreenID = 6;
 				MessageObject.lowerHeightCalibrated = 227;
@@ -486,9 +523,10 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 						heightCalibrated/MessageObject.heightCalibrated;
 
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
-			}
+			} // If lower limit set
 			else if (FestoState == 14)
 			{
+				// Set to confirm calibration
 				FestoState = 15;
 				MessageObject.ScreenID = 7;
 
@@ -499,73 +537,78 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 				Festo_Control_Platform(Driver, FESTO_PLATFORM_LOWER);
 
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
-			}
+			} // If confirming calibration
 			else if (FestoState == 15)
 			{
+				// Return to stopped screen
 				FestoState = 0;
 				MessageObject.ScreenID = 0;
 
+				// Set LED to red
 				GPIO_write(Board_LED0, Board_LED_OFF);
 				GPIO_write(Board_LED1, Board_LED_OFF);
 				GPIO_write(Board_LED2, Board_LED_ON);
 
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
 			}
-			else
-			{
-
-			}
-		}
+		} // Platform is at the top
 		else if (EventPosted & FESTO_EVENT_RISER_UP)
 		{
+			// If piece is being measured
 			if (FestoState == 3)
 			{
+				// If piece is on the platform
 				if (Festo_Sense_Piece_Placed(Driver) == 1)
 				{
+					// Measure piece height
 					FestoState = 4;
 					Event_post(FestoEvents, FESTO_EVENT_ADC_START);
 				}
 				else
 				{
+					// Return platform to default position
 					FestoState = 1;
 					Festo_Control_Ejector(Driver, FESTO_EJECTOR_RETRACT);
 					Festo_Control_Platform(Driver, FESTO_PLATFORM_LOWER);
 				}
-			}
+			} // If calibration is running
 			else if (FestoState == 13)
 			{
+				// Measure piece height
 				Event_post(FestoEvents, FESTO_EVENT_ADC_START);
 			}
-			else
-			{
-
-			}
-		}
+		} // Platform is at the bottom
 		else if (EventPosted & FESTO_EVENT_RISER_DOWN)
 		{
+			// If piece is being measured
 			if (FestoState == 2)
 			{
+				// If piece is placed on platform
 				if (Festo_Sense_Piece_Placed(Driver) == 1)
 				{
-
+					// Detect piece colour and material
 					colour = Festo_Sense_Piece_Colour(Driver);
 					material = Festo_Sense_Piece_Material(Driver);
 
+					// Move to next state and raise platform
 					FestoState = 3;
 					Festo_Control_Platform(Driver, FESTO_PLATFORM_RAISE);
 				}
 				else
 				{
+					// Set platform to default
 					FestoState = 1;
 				}
-			}
+			} // 
 			if (FestoState == 5)
 			{
+				// Reject piece
 				Festo_Control_Ejector(Driver, FESTO_EJECTOR_EXTEND);
 				Clock_start(myClock);
-			}
+			} // 
 			if (FestoState == 6)
 			{
+				// 
 				Festo_Control_Ejector(Driver, FESTO_EJECTOR_RETRACT);
 				Clock_start(myClock);
 				FestoState = 7;
@@ -576,40 +619,44 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 				MessageObject.ScreenID = 3;
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
 			}
-		}
+		} // Height measurement is taken
 		else if (EventPosted & FESTO_EVENT_ADC_FINISH)
 		{
+			// Height is returned from ADC task 
 		    if (Mailbox_pend(ADCMailbox, &heightMeasured, BIOS_NO_WAIT))
 		    {
+				// Take height measurement
 		    	Festo_Sense_Set_Piece_Height(Driver, heightMeasured);
 		    }
 		    else
 		    {
+				// Wait for measurement to be taken
 		    	Event_post(FestoEvents, FESTO_EVENT_ADC_START);
-		    }
+		    } // Accept or reject a piece
 			if (FestoState == 4)
 			{
+				// If piece is orange plastic
 				if (colour == FESTO_COLOR_ORANGE && material == FESTO_PIECE_OTHER)
 				{
 					ColourAccepted = &orangeAccepted;
 					ColourRejected = &orangeRejected;
 					MaterialAccepted = &plasticAccepted;
 					MaterialRejected = &plasticRejected;
-				}
+				} // If piece is black plastic
 				else if (colour == FESTO_COLOR_OTHER && material == FESTO_PIECE_OTHER)
 				{
 					ColourAccepted = &blackAccepted;
 					ColourRejected = &blackRejected;
 					MaterialAccepted = &plasticAccepted;
 					MaterialRejected = &plasticRejected;
-				}
+				} // If piece is metallic
 				else if (colour == FESTO_COLOR_OTHER && material == FESTO_PIECE_METALLIC)
 				{
 					ColourAccepted = NULL;
 					ColourRejected = NULL;
 					MaterialAccepted = &metallicAccepted;
 					MaterialRejected = &metallicRejected;
-				}
+				} // Piece isn't any matching category
 				else
 				{
 					ColourAccepted = NULL;
@@ -617,45 +664,50 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 					MaterialAccepted = NULL;
 					MaterialRejected = NULL;
 				}
-
+				// Check measured height against upper and lower limits
 				if (heightMeasured < UpperLimit && heightMeasured > LowerLimit)//withn range
 				{
 					if (ColourAccepted != NULL)
 					{
+						// Increment accepted colour
 						(*ColourAccepted)++;
 					}
 					if (MaterialAccepted != NULL)
 					{
+						// Increment accepted material
 						(*MaterialAccepted)++;
 						piecesProcessed++;
 					}
+					// Eject in accept bin
 					FestoState = 6;
 					System_printf("Piece is acceptable\n");
 					System_flush();
 
 					Festo_Control_Ejector(Driver, FESTO_EJECTOR_EXTEND);
 					Clock_start(myClock);
-				}
-				else // out of range
+				} // Piece is rejected
+				else
 				{
 					if (ColourAccepted != NULL)
 					{
+						// Increment rejected colour
 						(*ColourRejected)++;
 					}
 					if (MaterialAccepted != NULL)
 					{
+						// Increment rejected material
 						(*MaterialRejected)++;
 						piecesProcessed++;
 					}
+					// Lower platform to eject
 					System_printf("Piece is NOT acceptable\n");
 					System_flush();
 					FestoState = 5;
 					Festo_Control_Platform(Driver, FESTO_PLATFORM_LOWER);
 				}
-			}
+			} // If piece is being measured for calibration
 			else if (FestoState == 13)
 			{
-
 				ConvertFactor = 0.1*MessageObject.heightCalibrated/heightMeasured;
 				heightCalibrated = heightMeasured;
 
@@ -664,25 +716,26 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 
 				Mailbox_post(DisplayMailbox, &MessageObject, BIOS_NO_WAIT);
 			}
-		}
+		} // Ejection of piece is completed
 		else if (EventPosted & FESTO_EVENT_EJECTOR_FINISHED)
 		{
+			// Lower platform if piece was accepted
 			if (FestoState == 6)
 			{
 				Festo_Control_Platform(Driver, FESTO_PLATFORM_LOWER);
 				Clock_start(myClock);
-			}
+			} // Reset to running state if piece was rejected
 			else if (FestoState == 7)
 			{
 				FestoState = 1;
-			}
+			} // Retract ejector if not done yet
 			else
 			{
 				Festo_Control_Ejector(Driver, FESTO_EJECTOR_RETRACT);
 				Clock_start(myClock);
 				FestoState = 7;
 			}
-		}
+		} // Updates uptime counter every one second
 		else if (EventPosted & FESTO_EVENT_TICK)
 		{
 			if (Running)
@@ -711,11 +764,13 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 				System_flush();
 			}
 
-		}
+		} // Piece is not on platform
 		else if (EventPosted & FESTO_EVENT_PIECE_NOT_IN_PLACE)
 		{
+			// If piece is not being processed
 			if (FestoState <= 4)
 			{
+				// Return platform to default position
 				FestoState = 1;
 				Festo_Control_Ejector(Driver, FESTO_EJECTOR_RETRACT);
 				Festo_Control_Platform(Driver, FESTO_PLATFORM_LOWER);
@@ -723,15 +778,18 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 		}
 		else
 		{
+			// If driver is running
 			if (FestoState == 1)
 			{
+				// If piece is placed on platform
 				if (Festo_Sense_Piece_Placed(Driver) == 1)
 				{
 					FestoState = 2;
+					// Lower platform if not lowered
 					if (Festo_Sense_Riser_Down(Driver) == 0)
 					{
 						Festo_Control_Platform(Driver, FESTO_PLATFORM_LOWER);
-					}
+					} // Set platform to lowered
 					else
 					{
 					    Event_post(FestoEvents, FESTO_EVENT_RISER_DOWN);
@@ -747,7 +805,7 @@ Void _task_FESTO(UArg arg0, UArg arg1)
 //
 //! Festo Ejector Callback.
 //!
-//! This function is executed 1000ms after the ajector is actiavated.
+//! This function is executed 1000ms after the ejector is activated.
 //!
 //! \return None.
 //
@@ -797,7 +855,7 @@ Void _task_ADC(UArg arg0, UArg arg1)
 	curTime = asctime(ltm);
 	System_printf("Time(GMT): %s\n", curTime);
 
-
+	// Run conversion task until completed
 	while(1)
 	{
 		EventPosted = Event_pend(FestoEvents,
@@ -873,9 +931,9 @@ void _callback_Button_Down(void)
 
 //*****************************************************************************
 //
-//! Button Sellect Callback.
+//! Button Select Callback.
 //!
-//! This function is executed when the Button Sellect is pressed, which means a
+//! This function is executed when the Button Select is pressed, which means a
 //! interrupt for this pin was fired.
 //!
 //! \return None.
@@ -960,7 +1018,7 @@ int main(void)
     // Initialize GPIO
     Board_initGPIO();
 
-    // Turn off all LEDS
+    // Turn the LED off
     GPIO_write(Board_LED0, Board_LED_OFF);
     GPIO_write(Board_LED1, Board_LED_OFF);
     GPIO_write(Board_LED2, Board_LED_OFF);
