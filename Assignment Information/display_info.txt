@@ -118,3 +118,29 @@ The Festo Station was calibrated with success!
 Footer:
 Uptime: SSSS [s]
 Time: HH:MM:SS
+
+States of driver:
+0: Stopped
+1: Running
+2: Detecting colour and material
+3: Measuring height
+4: Accept or reject
+5: Reject piece
+6: Complete accept or reject
+7: Return to running state
+10: Initialise calibration
+11: Sample base height
+12: Set relative base height
+13: Set upper limit
+14: Set lower limit
+15: Confirm calibration
+
+Event_Id_00 - Up button
+Event_Id_01 - Down button
+Event_Id_02 - Select button
+Event_Id_03 - Riser bottom
+Event_Id_04 - Riser top
+
+Board_LED0 - Green
+Board_LED1 - Blue
+Board_LED2 - Red

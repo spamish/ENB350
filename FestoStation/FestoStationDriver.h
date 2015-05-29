@@ -128,25 +128,25 @@ uint8_t Festo_Driver_Init(FestoStationDriver* Driver)
 
 	return 0;
 }
-
+// Raise or lower the platform
 uint8_t Festo_Control_Platform(FestoStationDriver* Driver, uint8_t option)
 {
+	// Skip if driver disabled
 	if (Driver->Driver_state == FESTO_DISABLED)
 	{
 		return 1;
 	}
-
+	// Raise platform
 	if (option == FESTO_PLATFORM_RAISE)
 	{
 		GPIO_write(Board_ACTUATOR_RISER_DOWN, 0);
 		GPIO_write(Board_ACTUATOR_RISER_UP, 0xFFFF);
-	}
+	} // Lower platform
 	else if (option == FESTO_PLATFORM_LOWER)
 	{
 		GPIO_write(Board_ACTUATOR_RISER_UP, 0);
 		GPIO_write(Board_ACTUATOR_RISER_DOWN, 0xFFFF);
-
-	}
+	} // Skip if unavailable
 	else
 	{
 		return 1;
@@ -154,22 +154,23 @@ uint8_t Festo_Control_Platform(FestoStationDriver* Driver, uint8_t option)
 
 	return 0;
 }
-
+// Extend or retract ejector
 uint8_t Festo_Control_Ejector(FestoStationDriver* Driver, uint8_t option)
 {
+	// Skip if disabled
 	if (Driver->Driver_state == FESTO_DISABLED)
 	{
 		return 1;
 	}
-
+	// Extend ejector
 	if (option == FESTO_EJECTOR_EXTEND)
 	{
 		GPIO_write(Board_ACTUATOR_EJECTOR, 0xFFFF);
-	}
+	} // Retract ejector
 	else if (option == FESTO_EJECTOR_RETRACT)
 	{
 		GPIO_write(Board_ACTUATOR_EJECTOR, 0);
-	}
+	} // Skip if unavailable
 	else
 	{
 		return 1;
@@ -177,17 +178,18 @@ uint8_t Festo_Control_Ejector(FestoStationDriver* Driver, uint8_t option)
 
 	return 0;
 }
-
+// Control driver state
 uint8_t Festo_Control_Driver(FestoStationDriver* Driver, uint8_t option)
 {
+	// Disable driver
 	if (option == FESTO_DISABLED)
 	{
 		Driver->Driver_state = FESTO_DISABLED;
-	}
+	} // Enable driver
 	else if (option == FESTO_ENABLED)
 	{
 		Driver->Driver_state = FESTO_ENABLED;
-	}
+	} // Skip if unavailable
 	else
 	{
 		return 1;
@@ -195,22 +197,23 @@ uint8_t Festo_Control_Driver(FestoStationDriver* Driver, uint8_t option)
 
 	return 0;
 }
-
+// 
 uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option)
 {
+	// Skip if disabled
 	if (Driver->Driver_state == FESTO_DISABLED)
 	{
 		return 1;
 	}
-
+	// Set from maximum measure state
 	if (option == FESTO_MEASURE_DOWN)
 	{
 		GPIO_write(Board_ACTUATOR_MEASURE_DOWN, 0xFFFF);
-	}
+	} // Set from minimum measure state
 	else if (option == FESTO_MEASURE_UP)
 	{
 		GPIO_write(Board_ACTUATOR_MEASURE_DOWN, 0);
-	}
+	} // Skip if unavailable
 	else
 	{
 		return 1;
@@ -218,51 +221,51 @@ uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option)
 
 	return 0;
 }
-
+// Detect if piece is placed on platform
 uint8_t	Festo_Sense_Piece_Placed(FestoStationDriver* Driver)
 {
 	Driver->Piece_sensor = (GPIO_read(Board_SENSE_SAMPLE_IN_PLACE) > 0);
 	return Driver->Piece_sensor;
 }
-
+// Detect colour of piece
 uint8_t	Festo_Sense_Piece_Colour(FestoStationDriver* Driver)
 {
 	Driver->Colour_sensor = (GPIO_read(Board_SENSE_SAMPLE_COLOUR) > 0);
 	return Driver->Colour_sensor;
 }
-
+// Detect material of piece
 uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver)
 {
 	Driver->Material_sensor = (GPIO_read(Board_SENSE_SAMPLE_METALLIC) > 0);
 	return Driver->Material_sensor;
 }
-
+// Detect height of piece
 uint32_t	Festo_Sense_Piece_Height(FestoStationDriver* Driver)
 {
 	return Driver->Height_sensor;
 }
-
+// Set height value of piece (used for relative height)
 void Festo_Sense_Set_Piece_Height(FestoStationDriver* Driver, uint32_t height)
 {
 	Driver->Height_sensor = height;
 	return;
 }
-
+// Detect if platform is lowered
 uint8_t	Festo_Sense_Riser_Down(FestoStationDriver* Driver)
 {
 	return (GPIO_read(Board_SENSE_RISER_DOWN) > 0);
 }
-
+// Detect if platform is raised
 uint8_t	Festo_Sense_Riser_Up(FestoStationDriver* Driver)
 {
 	return (GPIO_read(Board_SENSE_RISER_UP) > 0);
 }
-
+// Detect if ejector is retracted
 uint8_t	Festo_Sense_Ejector_Ready(FestoStationDriver* Driver)
 {
 	return (GPIO_read(Board_SENSE_EJECTOR_READY) > 0);
 }
-
+// Detect if height measure is down
 uint8_t	Festo_Sense_Measure_Down(FestoStationDriver* Driver)
 {
 	return (GPIO_read(Board_SENSE_MEASURE_DOWN) > 0);
