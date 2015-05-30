@@ -197,7 +197,7 @@ uint8_t Festo_Control_Driver(FestoStationDriver* Driver, uint8_t option)
 
 	return 0;
 }
-// 
+// Set measure to min or max
 uint8_t Festo_Control_Measure(FestoStationDriver* Driver, uint8_t option)
 {
 	// Skip if disabled
@@ -239,12 +239,12 @@ uint8_t	Festo_Sense_Piece_Material(FestoStationDriver* Driver)
 	Driver->Material_sensor = (GPIO_read(Board_SENSE_SAMPLE_METALLIC) > 0);
 	return Driver->Material_sensor;
 }
-// Detect height of piece
+// Returns height of piece
 uint32_t	Festo_Sense_Piece_Height(FestoStationDriver* Driver)
 {
 	return Driver->Height_sensor;
 }
-// Set height value of piece (used for relative height)
+// Store height of piece
 void Festo_Sense_Set_Piece_Height(FestoStationDriver* Driver, uint32_t height)
 {
 	Driver->Height_sensor = height;
