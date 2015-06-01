@@ -351,7 +351,7 @@
    <evtMap id="6167">
       <longName>ti.uia.events.UIAErr.error</longName>
       <shortName>UIAErr_error</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+ErrorCode%3A0x%25x</msg>
       <eventType>ERROR</eventType>
@@ -359,7 +359,7 @@
    <evtMap id="6189">
       <longName>ti.uia.events.UIAErr.errorWithStr</longName>
       <shortName>UIAErr_errorWithStr</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+ErrorCode%3A0x%25x.+%25%24S</msg>
       <eventType>ERROR</eventType>
@@ -367,7 +367,7 @@
    <evtMap id="6216">
       <longName>ti.uia.events.UIAErr.hwError</longName>
       <shortName>UIAErr_hwError</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>HW+ERROR%3A+ErrorCode%3A0x%25x</msg>
       <eventType>ERROR</eventType>
@@ -375,7 +375,7 @@
    <evtMap id="6241">
       <longName>ti.uia.events.UIAErr.hwErrorWithStr</longName>
       <shortName>UIAErr_hwErrorWithStr</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>HW+ERROR%3A+ErrorCode%3A0x%25x.+%25%24S</msg>
       <eventType>ERROR</eventType>
@@ -383,7 +383,7 @@
    <evtMap id="6271">
       <longName>ti.uia.events.UIAErr.fatal</longName>
       <shortName>UIAErr_fatal</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>FATAL+ERROR%3A+ErrorCode%3A0x%25x</msg>
       <eventType>EMERGENCY</eventType>
@@ -391,7 +391,7 @@
    <evtMap id="6299">
       <longName>ti.uia.events.UIAErr.fatalWithStr</longName>
       <shortName>UIAErr_fatalWithStr</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>FATAL+ERROR%3A+ErrorCode%3A0x%25x.+%25%24S</msg>
       <eventType>EMERGENCY</eventType>
@@ -399,7 +399,7 @@
    <evtMap id="6332">
       <longName>ti.uia.events.UIAErr.critical</longName>
       <shortName>UIAErr_critical</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>CRITICAL+ERROR%3A+ErrorCode%3A0x%25x</msg>
       <eventType>CRITICAL</eventType>
@@ -407,7 +407,7 @@
    <evtMap id="6363">
       <longName>ti.uia.events.UIAErr.criticalWithStr</longName>
       <shortName>UIAErr_criticalWithStr</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>CRITICAL+ERROR%3A+ErrorCode%3A0x%25x.+%25%24S</msg>
       <eventType>CRITICAL</eventType>
@@ -415,7 +415,7 @@
    <evtMap id="6399">
       <longName>ti.uia.events.UIAErr.exception</longName>
       <shortName>UIAErr_exception</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Exception+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -423,7 +423,7 @@
    <evtMap id="6424">
       <longName>ti.uia.events.UIAErr.uncaughtException</longName>
       <shortName>UIAErr_uncaughtException</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Uncaught+Exception+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -431,7 +431,7 @@
    <evtMap id="6458">
       <longName>ti.uia.events.UIAErr.nullPointerException</longName>
       <shortName>UIAErr_nullPointerException</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Null+Pointer+Exception+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -439,7 +439,7 @@
    <evtMap id="6496">
       <longName>ti.uia.events.UIAErr.unexpectedInterrupt</longName>
       <shortName>UIAErr_unexpectedInterrupt</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Unexpected+Interrupt+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -447,7 +447,7 @@
    <evtMap id="6532">
       <longName>ti.uia.events.UIAErr.memoryAccessFault</longName>
       <shortName>UIAErr_memoryAccessFault</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Memory+Access+Fault+at+%25%24F.+[ADRS]0x%25x</msg>
       <eventType>ERROR</eventType>
@@ -455,7 +455,7 @@
    <evtMap id="6578">
       <longName>ti.uia.events.UIAErr.securityException</longName>
       <shortName>UIAErr_securityException</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Security+Exception+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -463,7 +463,7 @@
    <evtMap id="6612">
       <longName>ti.uia.events.UIAErr.divisionByZero</longName>
       <shortName>UIAErr_divisionByZero</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Division+by+zero+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -471,7 +471,7 @@
    <evtMap id="6644">
       <longName>ti.uia.events.UIAErr.overflowException</longName>
       <shortName>UIAErr_overflowException</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Overflow+exception+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -479,7 +479,7 @@
    <evtMap id="6678">
       <longName>ti.uia.events.UIAErr.indexOutOfRange</longName>
       <shortName>UIAErr_indexOutOfRange</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Index+out+of+range+at+%25%24F.+[INDEX]0x%25x</msg>
       <eventType>ERROR</eventType>
@@ -487,7 +487,7 @@
    <evtMap id="6724">
       <longName>ti.uia.events.UIAErr.notImplemented</longName>
       <shortName>UIAErr_notImplemented</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Attempt+to+access+feature+that+is+not+implemented+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -495,7 +495,7 @@
    <evtMap id="6789">
       <longName>ti.uia.events.UIAErr.stackOverflow</longName>
       <shortName>UIAErr_stackOverflow</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Stack+Overflow+detected+at+%25%24F.</msg>
       <eventType>CRITICAL</eventType>
@@ -503,7 +503,7 @@
    <evtMap id="6828">
       <longName>ti.uia.events.UIAErr.illegalInstruction</longName>
       <shortName>UIAErr_illegalInstruction</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Illegal+Instruction+executed+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -511,7 +511,7 @@
    <evtMap id="6872">
       <longName>ti.uia.events.UIAErr.entryPointNotFound</longName>
       <shortName>UIAErr_entryPointNotFound</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Entry+Point+Not+Found+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -519,7 +519,7 @@
    <evtMap id="6909">
       <longName>ti.uia.events.UIAErr.moduleNotFound</longName>
       <shortName>UIAErr_moduleNotFound</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Module+not+found+at+%25%24F.+[MODULE_ID]0x%25x.</msg>
       <eventType>ERROR</eventType>
@@ -527,7 +527,7 @@
    <evtMap id="6958">
       <longName>ti.uia.events.UIAErr.floatingPointError</longName>
       <shortName>UIAErr_floatingPointError</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Floating+Point+Error+at+%25%24F.</msg>
       <eventType>ERROR</eventType>
@@ -535,7 +535,7 @@
    <evtMap id="6994">
       <longName>ti.uia.events.UIAErr.invalidParameter</longName>
       <shortName>UIAErr_invalidParameter</shortName>
-      <moduleId>41</moduleId>
+      <moduleId>43</moduleId>
       <diagMask>128</diagMask>
       <msg>ERROR%3A+Invalid+Parameter+at+%25%24F.+[ParamNum]%25d+[ParamValue]0x%25x</msg>
       <eventType>ERROR</eventType>
@@ -543,7 +543,7 @@
    <evtMap id="7057">
       <longName>ti.uia.events.UIAEvt.warning</longName>
       <shortName>UIAEvt_warning</shortName>
-      <moduleId>42</moduleId>
+      <moduleId>44</moduleId>
       <diagMask>128</diagMask>
       <msg>WARNING%3A+EventCode%3A0x%25x</msg>
       <eventType>WARNING</eventType>
@@ -551,7 +551,7 @@
    <evtMap id="7081">
       <longName>ti.uia.events.UIAEvt.warningWithStr</longName>
       <shortName>UIAEvt_warningWithStr</shortName>
-      <moduleId>42</moduleId>
+      <moduleId>44</moduleId>
       <diagMask>128</diagMask>
       <msg>WARNING%3A+EventCode%3A0x%25x.+%25%24S</msg>
       <eventType>WARNING</eventType>
@@ -559,7 +559,7 @@
    <evtMap id="7110">
       <longName>ti.uia.events.UIAEvt.info</longName>
       <shortName>UIAEvt_info</shortName>
-      <moduleId>42</moduleId>
+      <moduleId>44</moduleId>
       <diagMask>16384</diagMask>
       <msg>INFO%3A+EventCode%3A+0x%25x</msg>
       <eventType>INFO</eventType>
@@ -567,7 +567,7 @@
    <evtMap id="7132">
       <longName>ti.uia.events.UIAEvt.infoWithStr</longName>
       <shortName>UIAEvt_infoWithStr</shortName>
-      <moduleId>42</moduleId>
+      <moduleId>44</moduleId>
       <diagMask>16384</diagMask>
       <msg>INFO%3A+EventCode%3A0x%25x.++%25%24S</msg>
       <eventType>INFO</eventType>
@@ -575,7 +575,7 @@
    <evtMap id="7159">
       <longName>ti.uia.events.UIAEvt.detail</longName>
       <shortName>UIAEvt_detail</shortName>
-      <moduleId>42</moduleId>
+      <moduleId>44</moduleId>
       <diagMask>16384</diagMask>
       <msg>DETAIL%3A+EventCode%3A0x%25x</msg>
       <eventType>DETAILS</eventType>
@@ -583,7 +583,7 @@
    <evtMap id="7182">
       <longName>ti.uia.events.UIAEvt.detailWithStr</longName>
       <shortName>UIAEvt_detailWithStr</shortName>
-      <moduleId>42</moduleId>
+      <moduleId>44</moduleId>
       <diagMask>16384</diagMask>
       <msg>DETAIL%3A+EventCode%3A0x%25x.++%25%24S</msg>
       <eventType>DETAILS</eventType>
@@ -591,7 +591,7 @@
    <evtMap id="7211">
       <longName>ti.uia.events.UIAEvt.intWithKey</longName>
       <shortName>UIAEvt_intWithKey</shortName>
-      <moduleId>42</moduleId>
+      <moduleId>44</moduleId>
       <diagMask>32768</diagMask>
       <msg>VALUE%3D%25d+%28AuxData%3D%25d%2C+%25d%29+Key%3A%25%24S</msg>
       <eventType>ANALYSIS</eventType>
@@ -635,49 +635,49 @@
    <evtMap id="7245">
       <longName>ti.sysbios.family.arm.m3.Hwi.LM_begin</longName>
       <shortName>Hwi_LM_begin</shortName>
-      <moduleId>48</moduleId>
+      <moduleId>50</moduleId>
       <diagMask>768</diagMask>
       <msg>LM_begin%3A+hwi%3A+0x%25x%2C+func%3A+0x%25x%2C+preThread%3A+%25d%2C+intNum%3A+%25d%2C+irp%3A+0x%25x</msg>
    </evtMap>
    <evtMap id="7315">
       <longName>ti.sysbios.family.arm.m3.Hwi.LD_end</longName>
       <shortName>Hwi_LD_end</shortName>
-      <moduleId>48</moduleId>
+      <moduleId>50</moduleId>
       <diagMask>512</diagMask>
       <msg>LD_end%3A+hwi%3A+0x%25x</msg>
    </evtMap>
    <evtMap id="7333">
       <longName>ti.uia.loggers.LoggerStopMode.L_test</longName>
       <shortName>LoggerStopMode_L_test</shortName>
-      <moduleId>54</moduleId>
+      <moduleId>56</moduleId>
       <diagMask>256</diagMask>
       <msg>LoggerStopMode+Test</msg>
    </evtMap>
    <evtMap id="7353">
       <longName>ti.sysbios.utils.Load.LS_cpuLoad</longName>
       <shortName>Load_LS_cpuLoad</shortName>
-      <moduleId>55</moduleId>
+      <moduleId>57</moduleId>
       <diagMask>2048</diagMask>
       <msg>LS_cpuLoad%3A+%25d%25%25</msg>
    </evtMap>
    <evtMap id="7370">
       <longName>ti.sysbios.utils.Load.LS_hwiLoad</longName>
       <shortName>Load_LS_hwiLoad</shortName>
-      <moduleId>55</moduleId>
+      <moduleId>57</moduleId>
       <diagMask>2048</diagMask>
       <msg>LS_hwiLoad%3A+%25d%2C%25d</msg>
    </evtMap>
    <evtMap id="7388">
       <longName>ti.sysbios.utils.Load.LS_swiLoad</longName>
       <shortName>Load_LS_swiLoad</shortName>
-      <moduleId>55</moduleId>
+      <moduleId>57</moduleId>
       <diagMask>2048</diagMask>
       <msg>LS_swiLoad%3A+%25d%2C%25d</msg>
    </evtMap>
    <evtMap id="7406">
       <longName>ti.sysbios.utils.Load.LS_taskLoad</longName>
       <shortName>Load_LS_taskLoad</shortName>
-      <moduleId>55</moduleId>
+      <moduleId>57</moduleId>
       <diagMask>2048</diagMask>
       <msg>LS_taskLoad%3A+0x%25x%2C%25d%2C%25d%2C0x%25x</msg>
    </evtMap>
@@ -892,132 +892,144 @@
       <cFileName>Seconds.c</cFileName>
    </modIdMap>
    <modIdMap id="34">
+      <moduleName>ti.sysbios.hal.Timer</moduleName>
+      <packageVersion>2,0,0,0,0</packageVersion>
+      <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/</packageBase>
+      <cFileName>Timer.c</cFileName>
+   </modIdMap>
+   <modIdMap id="35">
       <moduleName>ti.sysbios.hal.Hwi_HwiProxy</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="35">
+   <modIdMap id="36">
       <moduleName>ti.sysbios.hal.Seconds_SecondsProxy</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="36">
+   <modIdMap id="37">
+      <moduleName>ti.sysbios.hal.Timer_TimerProxy</moduleName>
+      <packageVersion>2,0,0,0,0</packageVersion>
+      <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/hal/</packageBase>
+      <cFileName>null</cFileName>
+   </modIdMap>
+   <modIdMap id="38">
       <moduleName>ti.sysbios.heaps.HeapMem</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/heaps/</packageBase>
       <cFileName>HeapMem.c</cFileName>
    </modIdMap>
-   <modIdMap id="37">
+   <modIdMap id="39">
       <moduleName>ti.sysbios.heaps.HeapMem_Module_GateProxy</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/heaps/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="38">
+   <modIdMap id="40">
       <moduleName>ti.sysbios.BIOS</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/</packageBase>
       <cFileName>BIOS.c</cFileName>
    </modIdMap>
-   <modIdMap id="39">
+   <modIdMap id="41">
       <moduleName>ti.sysbios.BIOS_RtsGateProxy</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="40">
+   <modIdMap id="42">
       <moduleName>ti.uia.events.DvtTypes</moduleName>
       <packageVersion>1,0,0,2,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="41">
+   <modIdMap id="43">
       <moduleName>ti.uia.events.UIAErr</moduleName>
       <packageVersion>1,0,0,2,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="42">
+   <modIdMap id="44">
       <moduleName>ti.uia.events.UIAEvt</moduleName>
       <packageVersion>1,0,0,2,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="43">
+   <modIdMap id="45">
       <moduleName>ti.uia.runtime.EventHdr</moduleName>
       <packageVersion>1,0,0,2,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="44">
+   <modIdMap id="46">
       <moduleName>ti.uia.runtime.QueueDescriptor</moduleName>
       <packageVersion>1,0,0,2,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/runtime/</packageBase>
       <cFileName>QueueDescriptor.c</cFileName>
    </modIdMap>
-   <modIdMap id="45">
+   <modIdMap id="47">
       <moduleName>ti.uia.runtime.UIAMetaData</moduleName>
       <packageVersion>1,0,0,2,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="46">
+   <modIdMap id="48">
       <moduleName>ti.sysbios.gates.GateHwi</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/gates/</packageBase>
       <cFileName>GateHwi.c</cFileName>
    </modIdMap>
-   <modIdMap id="47">
+   <modIdMap id="49">
       <moduleName>ti.sysbios.gates.GateMutex</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/gates/</packageBase>
       <cFileName>GateMutex.c</cFileName>
    </modIdMap>
-   <modIdMap id="48">
+   <modIdMap id="50">
       <moduleName>ti.sysbios.family.arm.m3.Hwi</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/m3/</packageBase>
       <cFileName>Hwi.c</cFileName>
    </modIdMap>
-   <modIdMap id="49">
+   <modIdMap id="51">
       <moduleName>ti.sysbios.family.arm.m3.IntrinsicsSupport</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/m3/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
-   <modIdMap id="50">
+   <modIdMap id="52">
       <moduleName>ti.sysbios.family.arm.m3.TaskSupport</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/m3/</packageBase>
       <cFileName>TaskSupport.c</cFileName>
    </modIdMap>
-   <modIdMap id="51">
+   <modIdMap id="53">
       <moduleName>ti.sysbios.family.arm.lm4.Seconds</moduleName>
       <packageVersion>1,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/lm4/</packageBase>
       <cFileName>Seconds.c</cFileName>
    </modIdMap>
-   <modIdMap id="52">
+   <modIdMap id="54">
       <moduleName>ti.sysbios.family.arm.lm4.TimestampProvider</moduleName>
       <packageVersion>1,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/lm4/</packageBase>
       <cFileName>TimestampProvider.c</cFileName>
    </modIdMap>
-   <modIdMap id="53">
+   <modIdMap id="55">
       <moduleName>ti.sysbios.family.arm.lm4.Timer</moduleName>
       <packageVersion>1,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/family/arm/lm4/</packageBase>
       <cFileName>Timer.c</cFileName>
    </modIdMap>
-   <modIdMap id="54">
+   <modIdMap id="56">
       <moduleName>ti.uia.loggers.LoggerStopMode</moduleName>
       <packageVersion>1,0,0,2,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/uia_2_00_02_39/packages/ti/uia/loggers/</packageBase>
       <cFileName>LoggerStopMode.c</cFileName>
    </modIdMap>
-   <modIdMap id="55">
+   <modIdMap id="57">
       <moduleName>ti.sysbios.utils.Load</moduleName>
       <packageVersion>2,0,0,0,0</packageVersion>
       <packageBase>C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/ti/sysbios/utils/</packageBase>

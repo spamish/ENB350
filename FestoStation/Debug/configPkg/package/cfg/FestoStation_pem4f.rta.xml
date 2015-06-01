@@ -29,7 +29,7 @@
       <instanceId>3</instanceId>
     </metaArgs>
   </loggers>
-  <modMap-length>45</modMap-length>
+  <modMap-length>46</modMap-length>
   <modMap key="xdc.runtime.Assert">
     <id>1</id>
     <logger>null</logger>
@@ -165,93 +165,98 @@
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.heaps.HeapMem">
-    <id>36</id>
+  <modMap key="ti.sysbios.hal.Timer">
+    <id>34</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.BIOS">
+  <modMap key="ti.sysbios.heaps.HeapMem">
     <id>38</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.events.DvtTypes">
+  <modMap key="ti.sysbios.BIOS">
     <id>40</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.events.UIAErr">
-    <id>41</id>
-    <logger>null</logger>
-    <diagsMask>0000110000000000</diagsMask>
-  </modMap>
-  <modMap key="ti.uia.events.UIAEvt">
+  <modMap key="ti.uia.events.DvtTypes">
     <id>42</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.runtime.EventHdr">
+  <modMap key="ti.uia.events.UIAErr">
     <id>43</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.runtime.QueueDescriptor">
+  <modMap key="ti.uia.events.UIAEvt">
     <id>44</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.runtime.UIAMetaData">
+  <modMap key="ti.uia.runtime.EventHdr">
     <id>45</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.gates.GateHwi">
+  <modMap key="ti.uia.runtime.QueueDescriptor">
     <id>46</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.gates.GateMutex">
+  <modMap key="ti.uia.runtime.UIAMetaData">
     <id>47</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.m3.Hwi">
+  <modMap key="ti.sysbios.gates.GateHwi">
     <id>48</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.m3.IntrinsicsSupport">
+  <modMap key="ti.sysbios.gates.GateMutex">
     <id>49</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.m3.TaskSupport">
+  <modMap key="ti.sysbios.family.arm.m3.Hwi">
     <id>50</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.lm4.Seconds">
+  <modMap key="ti.sysbios.family.arm.m3.IntrinsicsSupport">
     <id>51</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.lm4.TimestampProvider">
+  <modMap key="ti.sysbios.family.arm.m3.TaskSupport">
     <id>52</id>
     <logger>null</logger>
-    <diagsMask>0000100000000000</diagsMask>
+    <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.sysbios.family.arm.lm4.Timer">
+  <modMap key="ti.sysbios.family.arm.lm4.Seconds">
     <id>53</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
-  <modMap key="ti.uia.loggers.LoggerStopMode">
+  <modMap key="ti.sysbios.family.arm.lm4.TimestampProvider">
     <id>54</id>
+    <logger>null</logger>
+    <diagsMask>0000100000000000</diagsMask>
+  </modMap>
+  <modMap key="ti.sysbios.family.arm.lm4.Timer">
+    <id>55</id>
+    <logger>null</logger>
+    <diagsMask>0000110000000000</diagsMask>
+  </modMap>
+  <modMap key="ti.uia.loggers.LoggerStopMode">
+    <id>56</id>
     <logger>null</logger>
     <diagsMask>0000110000000000</diagsMask>
   </modMap>
   <modMap key="ti.sysbios.utils.Load">
-    <id>55</id>
+    <id>57</id>
     <logger>Load Logger</logger>
     <diagsMask>0000110000010000</diagsMask>
   </modMap>

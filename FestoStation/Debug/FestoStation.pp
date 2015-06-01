@@ -250,6 +250,7 @@ FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/_lock.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdio.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h
+FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/string.h
 FestoStation.obj: C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/utils/ustdlib.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h
 FestoStation.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h
@@ -514,6 +515,7 @@ C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h:
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/_lock.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdio.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/string.h: 
 C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/utils/ustdlib.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdarg.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/time.h: 
